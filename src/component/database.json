@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Black Myth: Wukong",
+    "category": "Action RPG",
+    "price": 59.99,
+    "image": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=500&q=80",
+    "description": "Trò chơi hành động nhập vai dựa trên tiểu thuyết Tây Du Ký."
+  },
+  {
+    "id": 2,
+    "title": "Cyberpunk 2077",
+    "category": "Sci-Fi / Open World",
+    "price": 39.99,
+    "image": "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=500&q=80",
+    "description": "Khám phá thành phố tương lai Night City đầy rẫy tội phạm."
+  },
+  {
+    "id": 3,
+    "title": "Elden Ring",
+    "category": "Souls-like",
+    "price": 49.99,
+    "image": "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=500&q=80",
+    "description": "Hành trình trở thành Elden Lord trong thế giới mở rộng lớn."
+  }
+]
