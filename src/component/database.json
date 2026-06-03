@@ -5,7 +5,7 @@
     "category": "Action RPG",
     "price": 59.99,
     "image": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=500&q=80",
-    "description": "Trò chơi hành động nhập vai dựa trên tiểu thuyết Tây Du Ký."
+    "description": "Trò chơi hành động nhập vai dựa trên tiểu thuyết Tây Du Ký với đồ họa đỉnh cao."
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@
     "category": "Sci-Fi / Open World",
     "price": 39.99,
     "image": "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=500&q=80",
-    "description": "Khám phá thành phố tương lai Night City đầy rẫy tội phạm."
+    "description": "Khám phá thành phố tương lai Night City đầy rẫy tội phạm và công nghệ cấy ghép."
   },
   {
     "id": 3,
@@ -21,6 +21,78 @@
     "category": "Souls-like",
     "price": 49.99,
     "image": "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=500&q=80",
-    "description": "Hành trình trở thành Elden Lord trong thế giới mở rộng lớn."
+    "description": "Hành trình trở thành Elden Lord trong thế giới mở rộng lớn, đầy thử thách khốc liệt."
+  },
+  {
+    "id": 4,
+    "title": "EA SPORTS FC 25",
+    "category": "Sports",
+    "price": 69.99,
+    "image": "https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=500&q=80",
+    "description": "Tựa game bóng đá chân thực, cập nhật thị trường chuyển nhượng và chế độ chơi mới."
+  },
+  {
+    "id": 5,
+    "title": "Grand Theft Auto V",
+    "category": "Sci-Fi / Open World",
+    "price": 29.99,
+    "image": "https://images.unsplash.com/photo-1538481199705-c710c4e965fc?w=500&q=80",
+    "description": "Hòa mình vào thế giới ngầm Los Santos với những phi vụ thế kỷ cùng 3 nhân vật chính."
+  },
+  {
+    "id": 6,
+    "title": "Resident Evil 4 Remake",
+    "category": "Horror",
+    "price": 39.98,
+    "image": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=500&q=80",
+    "description": "Hành trình giải cứu con gái tổng thống của Leon S. Kennedy tại một ngôi làng rùng rợn."
+  },
+  {
+    "id": 7,
+    "title": "Forza Horizon 5",
+    "category": "Racing",
+    "price": 59.95,
+    "image": "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=500&q=80",
+    "description": "Trải nghiệm những chặng đua xe tốc độ bùng nổ xuyên qua thế giới mở Mexico tươi đẹp."
+  },
+  {
+    "id": 8,
+    "title": "Hades II",
+    "category": "Rogue-like",
+    "price": 29.99,
+    "image": "https://images.unsplash.com/photo-1612287230202-1bf1d85d1bdf?w=500&q=80",
+    "description": "Chiến đấu vượt qua thế giới ngầm của Hy Lạp cổ đại bằng sức mạnh hắc ám."
+  },
+  {
+    "id": 9,
+    "title": "Marvel's Spider-Man 2",
+    "category": "Action RPG",
+    "price": 69.99,
+    "image": "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?w=500&q=80",
+    "description": "Đu tơ qua thành phố New York rộng lớn cùng cả Peter Parker và Miles Morales."
+  },
+  {
+    "id": 10,
+    "title": "Minecraft",
+    "category": "Sandbox",
+    "price": 26.95,
+    "image": "https://images.unsplash.com/photo-1605899435973-ca2d1a8861cf?w=500&q=80",
+    "description": "Thỏa sức sáng tạo và sinh tồn trong một thế giới vô hạn tạo nên từ các khối vuông."
+  },
+  {
+    "id": 11,
+    "title": "The Witcher 3: Wild Hunt",
+    "category": "Action RPG",
+    "price": 39.99,
+    "image": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=500&q=80",
+    "description": "Trở thành thợ săn quái vật khét tiếng Geralt xứ Rivia đi tìm đứa con gái của định mệnh."
+  },
+  {
+    "id": 12,
+    "title": "Stardew Valley",
+    "category": "Sandbox",
+    "price": 14.99,
+    "image": "https://images.unsplash.com/photo-1595590424283-b8f17842773f?w=500&q=80",
+    "description": "Rời bỏ thành thị xô bồ để về quê trồng trọt, chăn nuôi và xây dựng trang trại trong mơ."
   }
 ]

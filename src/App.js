@@ -1,8 +1,14 @@
 import React, { useState } from 'react';
+<<<<<<< Updated upstream
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Menu from './component/Menu';
 import Home from './component/Home';
 import Cart from './component/Cart'; // 1. Import file Cart vào đây
+=======
+import 'bootstrap/dist/css/bootstrap.min.css'; 
+import Menu from './component/Menu'; 
+import Home from './component/Home'; 
+>>>>>>> Stashed changes
 
 function App() {
   const [cart, setCart] = useState([]);
