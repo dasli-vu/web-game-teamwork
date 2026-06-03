@@ -77,7 +77,7 @@ function Cart({ cartItems, removeFromCart, clearCart }) {
             <button 
               className="btn btn-warning w-100 fw-bold py-2 shadow-sm" 
               disabled={cartItems.length === 0}
-              onClick={() => alert("Chức năng thanh toán sẽ được hoàn thiện ở bài sau!")}
+              onClick={() => alert("Thanh toán thành công")}
             >
               💳 TIẾN HÀNH THANH TOÁN
             </button>
