@@ -1,6 +1,7 @@
 import React from 'react';
+import LanguageSwitcher from './LanguageSwitcher';
 
-function Menu({ cartCount, currentUser, isLoggedIn, isAdminLoggedIn, onLogout, onAdminLogout, onLoginClick, onAdminLoginClick, onNavigate }) {
+function Menu({ cartCount, currentUser, isLoggedIn, isAdminLoggedIn, onLogout, onAdminLogout, onLoginClick, onNavigate }) {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
       <div className="container">
@@ -49,6 +50,9 @@ function Menu({ cartCount, currentUser, isLoggedIn, isAdminLoggedIn, onLogout, o
             )}
           </ul>
           <div className="d-flex align-items-center gap-2">
+            {/* Language Switcher */}
+            <LanguageSwitcher />
+
             {/* Hiển thị thông tin user nếu đã login */}
             {isLoggedIn && !isAdminLoggedIn && (
               <span className="text-light me-2">
@@ -74,17 +78,7 @@ function Menu({ cartCount, currentUser, isLoggedIn, isAdminLoggedIn, onLogout, o
               </button>
             )}
 
-            {/* Nút Admin Login - chỉ hiển thị khi chưa login admin */}
-            {!isAdminLoggedIn && (
-              <button 
-                className="btn btn-outline-danger me-2" 
-                onClick={onAdminLoginClick}
-              >
-                🔐 Admin
-              </button>
-            )}
-
-            {/* Nút đăng nhập - chỉ hiển thị khi chưa login user */}
+            {/* Nút đăng nhập - chỉ hiển thị khi chưa login */}
             {!isLoggedIn && !isAdminLoggedIn && (
               <button 
                 className="btn btn-outline-success me-2" 

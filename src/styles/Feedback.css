@@ -1,0 +1,78 @@
+/* Feedback Styles */
+.feedback-section {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border-top: 3px solid #667eea;
+  border-bottom: 3px solid #667eea;
+}
+
+.feedback-form {
+  background: white !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #667eea;
+}
+
+.feedback-form textarea {
+  border-color: #ddd;
+  border-radius: 8px;
+  font-family: 'Arial', sans-serif;
+}
+
+.feedback-form textarea:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+}
+
+.feedback-item {
+  background: white;
+  border-left: 4px solid #764ba2 !important;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.feedback-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transform: translateX(2px);
+}
+
+.feedback-header {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.stars {
+  display: inline-flex;
+  gap: 2px;
+}
+
+.stars .star {
+  font-size: 18px;
+  color: #ddd;
+  transition: color 0.2s;
+}
+
+.stars .star.filled {
+  color: #ffc107;
+}
+
+.feedback-list {
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.feedback-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.feedback-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.feedback-list::-webkit-scrollbar-thumb {
+  background: #667eea;
+  border-radius: 4px;
+}
+
+.feedback-list::-webkit-scrollbar-thumb:hover {
+  background: #764ba2;
+}

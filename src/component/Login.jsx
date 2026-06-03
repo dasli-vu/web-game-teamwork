@@ -1,16 +1,25 @@
 import React, { useState } from 'react';
 import '../styles/Login.css';
 
-export default function Login({ show, onHide, onLoginSuccess }) {
+const ADMIN_CREDENTIALS = {
+  username: 'admin',
+  password: 'admin123'
+};
+
+export default function Login({ show, onHide, onLoginSuccess, onAdminLoginSuccess }) {
   const [currentPage, setCurrentPage] = useState('login');//KHởi tạo State
   const [formData, setFormData] = useState({//Lưu dữ liệu người dùng nhập vào form
     email: '',
     password: '',
     confirmPassword: '',
     fullName: '',
+    adminUsername: '',
+    adminPassword: ''
   });
   const [errors, setErrors] = useState({});//Lưu các lỗi validation.
   const [successMessage, setSuccessMessage] = useState('');//Hiển thị thông báo thành công.
+  const [attemptCount, setAttemptCount] = useState(0);
+  const [isLocked, setIsLocked] = useState(false);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -29,9 +38,11 @@ export default function Login({ show, onHide, onLoginSuccess }) {
   };
 
   const resetForm = () => {
-    setFormData({ email: '', password: '', confirmPassword: '', fullName: '' });
+    setFormData({ email: '', password: '', confirmPassword: '', fullName: '', adminUsername: '', adminPassword: '' });
     setErrors({});
     setSuccessMessage('');
+    setAttemptCount(0);
+    setIsLocked(false);
   };
 
   const handleClose = () => {
@@ -145,6 +156,60 @@ export default function Login({ show, onHide, onLoginSuccess }) {
     }, 5000);
   };
 
+  const handleAdminLogin = (e) => {
+    e.preventDefault();
+    
+    if (isLocked) {
+      setErrors({ adminGeneral: '❌ Tài khoản bị khóa. Vui lòng thử lại sau 1 phút.' });
+      return;
+    }
+
+    const newErrors = {};
+
+    if (!formData.adminUsername) newErrors.adminUsername = '👤 Username không được để trống';
+    if (!formData.adminPassword) newErrors.adminPassword = '🔒 Password không được để trống';
+
+    if (Object.keys(newErrors).length > 0) {
+      setErrors(newErrors);
+      return;
+    }
+
+    if (formData.adminUsername === ADMIN_CREDENTIALS.username && 
+        formData.adminPassword === ADMIN_CREDENTIALS.password) {
+      
+      localStorage.setItem('adminUser', JSON.stringify({
+        username: formData.adminUsername,
+        loginTime: new Date().toISOString()
+      }));
+      
+      setSuccessMessage('✨ Đăng nhập Admin thành công!');
+      setAttemptCount(0);
+      
+      setTimeout(() => {
+        handleClose();
+        onAdminLoginSuccess();
+      }, 1500);
+    } else {
+      const newCount = attemptCount + 1;
+      setAttemptCount(newCount);
+      
+      if (newCount >= 3) {
+        setIsLocked(true);
+        setErrors({ adminGeneral: '❌ Đăng nhập thất bại 3 lần. Tài khoản bị khóa!' });
+        
+        setTimeout(() => {
+          setIsLocked(false);
+          setAttemptCount(0);
+          setFormData(prev => ({ ...prev, adminUsername: '', adminPassword: '' }));
+        }, 60000);
+      } else {
+        setErrors({ 
+          adminGeneral: `❌ Username hoặc Password không chính xác! (Lần ${newCount}/3)` 
+        });
+      }
+    }
+  };
+
   if (!show) return null;
 
   return (
@@ -155,6 +220,7 @@ export default function Login({ show, onHide, onLoginSuccess }) {
             {currentPage === 'login' && '🎮 Đăng Nhập'}
             {currentPage === 'signup' && '✍️ Đăng Ký'}
             {currentPage === 'forgot' && '🔑 Quên Mật Khẩu'}
+            {currentPage === 'admin' && '🔐 Admin Dashboard Login'}
           </h2>
           <button className="btn-close-modal" onClick={handleClose}>✕</button>
         </div>
@@ -283,6 +349,53 @@ export default function Login({ show, onHide, onLoginSuccess }) {
               <button type="submit" className="btn-submit btn-forgot">Lấy Mật Khẩu</button>
             </form>
           )}
+
+          {currentPage === 'admin' && (
+            <form onSubmit={handleAdminLogin}>
+              {errors.adminGeneral && (
+                <div className="alert alert-danger" role="alert">
+                  {errors.adminGeneral}
+                </div>
+              )}
+
+              <div className="form-group">
+                <label>👤 Username</label>
+                <input
+                  type="text"
+                  className={`form-input ${errors.adminUsername ? 'error' : ''}`}
+                  name="adminUsername"
+                  value={formData.adminUsername}
+                  onChange={handleInputChange}
+                  placeholder="Nhập username"
+                  disabled={isLocked}
+                />
+                {errors.adminUsername && <span className="error-text">{errors.adminUsername}</span>}
+              </div>
+
+              <div className="form-group">
+                <label>🔒 Password</label>
+                <input
+                  type="password"
+                  className={`form-input ${errors.adminPassword ? 'error' : ''}`}
+                  name="adminPassword"
+                  value={formData.adminPassword}
+                  onChange={handleInputChange}
+                  placeholder="Nhập password"
+                  disabled={isLocked}
+                />
+                {errors.adminPassword && <span className="error-text">{errors.adminPassword}</span>}
+              </div>
+
+              <button 
+                type="submit" 
+                className="btn-submit" 
+                disabled={isLocked}
+                style={{ opacity: isLocked ? 0.5 : 1, cursor: isLocked ? 'not-allowed' : 'pointer' }}
+              >
+                {isLocked ? '🔒 Tài khoản bị khóa' : '✅ Đăng Nhập Admin'}
+              </button>
+            </form>
+          )}
         </div>
 
         <div className="login-modal-tabs">
@@ -297,6 +410,12 @@ export default function Login({ show, onHide, onLoginSuccess }) {
             onClick={() => { setCurrentPage('signup'); setErrors({}); }}
           >
             Đăng Ký
+          </button>
+          <button
+            className={`tab-btn ${currentPage === 'admin' ? 'active' : ''}`}
+            onClick={() => { setCurrentPage('admin'); setErrors({}); }}
+          >
+            🔐 Admin
           </button>
         </div>
       </div>

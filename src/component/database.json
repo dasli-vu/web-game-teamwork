@@ -1,65 +1,1115 @@
-[
-  {
-    "id": 1,
-    "title": "Black Myth: Wukong",
-    "category": "Action RPG",
-    "price": 59.99,
-    "image": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=500&q=80",
-    "description": "Trò chơi hành động nhập vai dựa trên tiểu thuyết Tây Du Ký.",
-    "details": {
-      "releaseDate": "2024",
-      "platform": "PC, PlayStation 5, Xbox Series X|S",
-      "developer": "Game Science",
-      "rating": "9.2/10",
-      "fullDescription": "Black Myth: Wukong là một tựa game hành động nhập vai xuất sắc được phát triển dựa trên tiểu thuyết kinh điển Tây Du Ký. Trò chơi mang đến trải nghiệm chiến đấu sôi động, thế giới rộng lớn và cốt truyện hấp dẫn.",
-      "features": [
-        "Hệ thống chiến đấu phức tạp với nhiều kỹ năng",
-        "Thế giới mở rộng lớn để khám phá",
-        "Câu chuyện dựa trên tiểu thuyết kinh điển",
-        "Đồ họa tuyệt đẹp"
-      ]
+﻿[
+    {
+        "id":  1,
+        "description":  "Trò chơi hành động nhập vai dựa trên tiểu thuyết Tây Du Ký.",
+        "details":  {
+                        "features":  [
+                                         "Hệ thống chiến đấu phức tạp",
+                                         "Thế giới mở rộng lớn",
+                                         "Câu chuyện dựa trên tiểu thuyết",
+                                         "Đồ họa tuyệt đẹp"
+                                     ],
+                        "developer":  "Game Science",
+                        "releaseDate":  "2024",
+                        "platform":  "PC, PS5, Xbox Series X|S",
+                        "rating":  "9.2/10",
+                        "fullDescription":  "Black Myth: Wukong là một tựa game hành động nhập vai xuất sắc."
+                    },
+        "price":  59.99,
+        "category":  "Action RPG",
+        "title":  "Black Myth: Wukong",
+        "image":  "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=500\u0026q=80"
+    },
+    {
+        "id":  2,
+        "description":  "Khám phá thành phố tương lai Night City đầy rẫy tội phạm.",
+        "details":  {
+                        "features":  [
+                                         "Hệ thống lựa chọn chi tiết",
+                                         "Thành phố mở rộng lớn",
+                                         "Nhân vật tùy chỉnh",
+                                         "Cốt truyện sâu sắc"
+                                     ],
+                        "developer":  "CD Projekt Red",
+                        "releaseDate":  "2020",
+                        "platform":  "PC, PS5, Xbox",
+                        "rating":  "8.5/10",
+                        "fullDescription":  "Cyberpunk 2077 trong thế giới mở."
+                    },
+        "price":  39.99,
+        "category":  "Sci-Fi / Open World",
+        "title":  "Cyberpunk 2077",
+        "image":  "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=500\u0026q=80"
+    },
+    {
+        "id":  3,
+        "description":  "Hành trình trở thành Elden Lord trong thế giới mở rộng lớn.",
+        "details":  {
+                        "features":  [
+                                         "Thế giới mở rộng",
+                                         "Hệ thống chiến đấu đầy thách thức",
+                                         "Câu chuyện sâu sắc",
+                                         "Multiplayer"
+                                     ],
+                        "developer":  "FromSoftware",
+                        "releaseDate":  "2022",
+                        "platform":  "PC, PS4/5, Xbox",
+                        "rating":  "9.5/10",
+                        "fullDescription":  "Elden Ring là một masterpiece."
+                    },
+        "price":  49.99,
+        "category":  "Souls-like",
+        "title":  "Elden Ring",
+        "image":  "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=500\u0026q=80"
+    },
+    {
+        "id":  4,
+        "description":  "Trò chơi Shooter hấp dẫn số 4",
+        "details":  {
+                        "features":  [
+                                         "Gameplay độc đáo",
+                                         "Đồ họa đẹp",
+                                         "Multiplayer hỗ trợ",
+                                         "Nội dung phong phú"
+                                     ],
+                        "developer":  "Nintendo",
+                        "releaseDate":  2023,
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "7.3/10",
+                        "fullDescription":  "Một tựa game tuyệt vời thuộc thể loại Shooter với lối chơi độc đáo."
+                    },
+        "price":  22.99,
+        "category":  "Shooter",
+        "title":  "Game Title 4 - Shooter",
+        "image":  "https://images.unsplash.com/photo-1500000004?w=500\u0026q=80"
+    },
+    {
+        "id":  5,
+        "description":  "Trò chơi Racing hấp dẫn số 5",
+        "details":  {
+                        "features":  [
+                                         "Gameplay độc đáo",
+                                         "Đồ họa đẹp",
+                                         "Multiplayer hỗ trợ",
+                                         "Nội dung phong phú"
+                                     ],
+                        "developer":  "Ubisoft",
+                        "releaseDate":  2020,
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "7.4/10",
+                        "fullDescription":  "Một tựa game tuyệt vời thuộc thể loại Racing với lối chơi độc đáo."
+                    },
+        "price":  23.99,
+        "category":  "Racing",
+        "title":  "Game Title 5 - Racing",
+        "image":  "https://images.unsplash.com/photo-1500000005?w=500\u0026q=80"
+    },
+    {
+        "id":  6,
+        "description":  "Trò chơi Sports hấp dẫn số 6",
+        "details":  {
+                        "features":  [
+                                         "Gameplay độc đáo",
+                                         "Đồ họa đẹp",
+                                         "Multiplayer hỗ trợ",
+                                         "Nội dung phong phú"
+                                     ],
+                        "developer":  "Square Enix",
+                        "releaseDate":  2021,
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "7.5/10",
+                        "fullDescription":  "Một tựa game tuyệt vời thuộc thể loại Sports với lối chơi độc đáo."
+                    },
+        "price":  24.99,
+        "category":  "Sports",
+        "title":  "Game Title 6 - Sports",
+        "image":  "https://images.unsplash.com/photo-1500000006?w=500\u0026q=80"
+    },
+    {
+        "id":  7,
+        "description":  "Trò chơi Horror hấp dẫn số 7",
+        "details":  {
+                        "features":  [
+                                         "Gameplay độc đáo",
+                                         "Đồ họa đẹp",
+                                         "Multiplayer hỗ trợ",
+                                         "Nội dung phong phú"
+                                     ],
+                        "developer":  "Bethesda",
+                        "releaseDate":  2022,
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "7.6/10",
+                        "fullDescription":  "Một tựa game tuyệt vời thuộc thể loại Horror với lối chơi độc đáo."
+                    },
+        "price":  25.99,
+        "category":  "Horror",
+        "title":  "Game Title 7 - Horror",
+        "image":  "https://images.unsplash.com/photo-1500000007?w=500\u0026q=80"
+    },
+    {
+        "id":  8,
+        "description":  "Trò chơi Adventure hấp dẫn số 8",
+        "details":  {
+                        "features":  [
+                                         "Gameplay độc đáo",
+                                         "Đồ họa đẹp",
+                                         "Multiplayer hỗ trợ",
+                                         "Nội dung phong phú"
+                                     ],
+                        "developer":  "Valve",
+                        "releaseDate":  2023,
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "7.7/10",
+                        "fullDescription":  "Một tựa game tuyệt vời thuộc thể loại Adventure với lối chơi độc đáo."
+                    },
+        "price":  26.99,
+        "category":  "Adventure",
+        "title":  "Game Title 8 - Adventure",
+        "image":  "https://images.unsplash.com/photo-1500000008?w=500\u0026q=80"
+    },
+    {
+        "id":  9,
+        "description":  "Trò chơi Puzzle hấp dẫn số 9",
+        "details":  {
+                        "features":  [
+                                         "Gameplay độc đáo",
+                                         "Đồ họa đẹp",
+                                         "Multiplayer hỗ trợ",
+                                         "Nội dung phong phú"
+                                     ],
+                        "developer":  "Epic Games",
+                        "releaseDate":  2020,
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "7.8/10",
+                        "fullDescription":  "Một tựa game tuyệt vời thuộc thể loại Puzzle với lối chơi độc đáo."
+                    },
+        "price":  27.99,
+        "category":  "Puzzle",
+        "title":  "Game Title 9 - Puzzle",
+        "image":  "https://images.unsplash.com/photo-1500000009?w=500\u0026q=80"
+    },
+    {
+        "id":  10,
+        "description":  "Trò chơi Casual hấp dẫn số 10",
+        "details":  {
+                        "features":  [
+                                         "Gameplay độc đáo",
+                                         "Đồ họa đẹp",
+                                         "Multiplayer hỗ trợ",
+                                         "Nội dung phong phú"
+                                     ],
+                        "developer":  "Activision",
+                        "releaseDate":  2021,
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "7.9/10",
+                        "fullDescription":  "Một tựa game tuyệt vời thuộc thể loại Casual với lối chơi độc đáo."
+                    },
+        "price":  28.99,
+        "category":  "Casual",
+        "title":  "Game Title 10 - Casual",
+        "image":  "https://images.unsplash.com/photo-1500000010?w=500\u0026q=80"
+    },
+    {
+        "id":  11,
+        "description":  "Trò chơi MMO hấp dẫn số 11",
+        "details":  {
+                        "features":  [
+                                         "Gameplay độc đáo",
+                                         "Đồ họa đẹp",
+                                         "Multiplayer hỗ trợ",
+                                         "Nội dung phong phú"
+                                     ],
+                        "developer":  "Infinity Ward",
+                        "releaseDate":  2022,
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "8/10",
+                        "fullDescription":  "Một tựa game tuyệt vời thuộc thể loại MMO với lối chơi độc đáo."
+                    },
+        "price":  29.99,
+        "category":  "MMO",
+        "title":  "Game Title 11 - MMO",
+        "image":  "https://images.unsplash.com/photo-1500000011?w=500\u0026q=80"
+    },
+    {
+        "id":  12,
+        "description":  "Trò chơi Fighting hấp dẫn số 12",
+        "details":  {
+                        "features":  [
+                                         "Gameplay độc đáo",
+                                         "Đồ họa đẹp",
+                                         "Multiplayer hỗ trợ",
+                                         "Nội dung phong phú"
+                                     ],
+                        "developer":  "Naughty Dog",
+                        "releaseDate":  2023,
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "8.1/10",
+                        "fullDescription":  "Một tựa game tuyệt vời thuộc thể loại Fighting với lối chơi độc đáo."
+                    },
+        "price":  30.99,
+        "category":  "Fighting",
+        "title":  "Game Title 12 - Fighting",
+        "image":  "https://images.unsplash.com/photo-1500000012?w=500\u0026q=80"
+    },
+    {
+        "id":  13,
+        "description":  "Trò chơi Action RPG hấp dẫn số 13",
+        "details":  {
+                        "features":  [
+                                         "Gameplay độc đáo",
+                                         "Đồ họa đẹp",
+                                         "Multiplayer hỗ trợ",
+                                         "Nội dung phong phú"
+                                     ],
+                        "developer":  "Rockstar Games",
+                        "releaseDate":  2020,
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "8.2/10",
+                        "fullDescription":  "Một tựa game tuyệt vời thuộc thể loại Action RPG với lối chơi độc đáo."
+                    },
+        "price":  31.99,
+        "category":  "Action RPG",
+        "title":  "Game Title 13 - Action RPG",
+        "image":  "https://images.unsplash.com/photo-1500000013?w=500\u0026q=80"
+    },
+    {
+        "id":  14,
+        "description":  "Trò chơi Sci-Fi RPG hấp dẫn số 14",
+        "details":  {
+                        "features":  [
+                                         "Gameplay độc đáo",
+                                         "Đồ họa đẹp",
+                                         "Multiplayer hỗ trợ",
+                                         "Nội dung phong phú"
+                                     ],
+                        "developer":  "Nintendo",
+                        "releaseDate":  2021,
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "8.3/10",
+                        "fullDescription":  "Một tựa game tuyệt vời thuộc thể loại Sci-Fi RPG với lối chơi độc đáo."
+                    },
+        "price":  32.99,
+        "category":  "Sci-Fi RPG",
+        "title":  "Game Title 14 - Sci-Fi RPG",
+        "image":  "https://images.unsplash.com/photo-1500000014?w=500\u0026q=80"
+    },
+    {
+        "id":  15,
+        "description":  "Trò chơi Strategy hấp dẫn số 15",
+        "details":  {
+                        "features":  [
+                                         "Gameplay độc đáo",
+                                         "Đồ họa đẹp",
+                                         "Multiplayer hỗ trợ",
+                                         "Nội dung phong phú"
+                                     ],
+                        "developer":  "Ubisoft",
+                        "releaseDate":  2022,
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "8.4/10",
+                        "fullDescription":  "Một tựa game tuyệt vời thuộc thể loại Strategy với lối chơi độc đáo."
+                    },
+        "price":  33.99,
+        "category":  "Strategy",
+        "title":  "Game Title 15 - Strategy",
+        "image":  "https://images.unsplash.com/photo-1500000015?w=500\u0026q=80"
+    },
+    {
+        "id":  16,
+        "description":  "Trò chơi Shooter hấp dẫn số 16",
+        "details":  {
+                        "features":  [
+                                         "Gameplay độc đáo",
+                                         "Đồ họa đẹp",
+                                         "Multiplayer hỗ trợ",
+                                         "Nội dung phong phú"
+                                     ],
+                        "developer":  "Square Enix",
+                        "releaseDate":  2023,
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "8.5/10",
+                        "fullDescription":  "Một tựa game tuyệt vời thuộc thể loại Shooter với lối chơi độc đáo."
+                    },
+        "price":  34.99,
+        "category":  "Shooter",
+        "title":  "Game Title 16 - Shooter",
+        "image":  "https://images.unsplash.com/photo-1500000016?w=500\u0026q=80"
+    },
+    {
+        "id":  17,
+        "description":  "Trò chơi Racing hấp dẫn số 17",
+        "details":  {
+                        "features":  [
+                                         "Gameplay độc đáo",
+                                         "Đồ họa đẹp",
+                                         "Multiplayer hỗ trợ",
+                                         "Nội dung phong phú"
+                                     ],
+                        "developer":  "Bethesda",
+                        "releaseDate":  2020,
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "8.6/10",
+                        "fullDescription":  "Một tựa game tuyệt vời thuộc thể loại Racing với lối chơi độc đáo."
+                    },
+        "price":  35.99,
+        "category":  "Racing",
+        "title":  "Game Title 17 - Racing",
+        "image":  "https://images.unsplash.com/photo-1500000017?w=500\u0026q=80"
+    },
+    {
+        "id":  18,
+        "description":  "Trò chơi Sports hấp dẫn số 18",
+        "details":  {
+                        "features":  [
+                                         "Gameplay độc đáo",
+                                         "Đồ họa đẹp",
+                                         "Multiplayer hỗ trợ",
+                                         "Nội dung phong phú"
+                                     ],
+                        "developer":  "Valve",
+                        "releaseDate":  2021,
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "8.7/10",
+                        "fullDescription":  "Một tựa game tuyệt vời thuộc thể loại Sports với lối chơi độc đáo."
+                    },
+        "price":  36.99,
+        "category":  "Sports",
+        "title":  "Game Title 18 - Sports",
+        "image":  "https://images.unsplash.com/photo-1500000018?w=500\u0026q=80"
+    },
+    {
+        "id":  19,
+        "description":  "Trò chơi Horror hấp dẫn số 19",
+        "details":  {
+                        "features":  [
+                                         "Gameplay độc đáo",
+                                         "Đồ họa đẹp",
+                                         "Multiplayer hỗ trợ",
+                                         "Nội dung phong phú"
+                                     ],
+                        "developer":  "Epic Games",
+                        "releaseDate":  2022,
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "8.8/10",
+                        "fullDescription":  "Một tựa game tuyệt vời thuộc thể loại Horror với lối chơi độc đáo."
+                    },
+        "price":  37.99,
+        "category":  "Horror",
+        "title":  "Game Title 19 - Horror",
+        "image":  "https://images.unsplash.com/photo-1500000019?w=500\u0026q=80"
+    },
+    {
+        "id":  20,
+        "description":  "Trò chơi Adventure hấp dẫn số 20",
+        "details":  {
+                        "features":  [
+                                         "Gameplay độc đáo",
+                                         "Đồ họa đẹp",
+                                         "Multiplayer hỗ trợ",
+                                         "Nội dung phong phú"
+                                     ],
+                        "developer":  "Activision",
+                        "releaseDate":  2023,
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "8.9/10",
+                        "fullDescription":  "Một tựa game tuyệt vời thuộc thể loại Adventure với lối chơi độc đáo."
+                    },
+        "price":  38.99,
+        "category":  "Adventure",
+        "title":  "Game Title 20 - Adventure",
+        "image":  "https://images.unsplash.com/photo-1500000020?w=500\u0026q=80"
+    },
+    {
+        "id":  21,
+        "description":  "Trò chơi Puzzle hấp dẫn số 21",
+        "details":  {
+                        "features":  [
+                                         "Gameplay độc đáo",
+                                         "Đồ họa đẹp",
+                                         "Multiplayer hỗ trợ",
+                                         "Nội dung phong phú"
+                                     ],
+                        "developer":  "Infinity Ward",
+                        "releaseDate":  2020,
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "9/10",
+                        "fullDescription":  "Một tựa game tuyệt vời thuộc thể loại Puzzle với lối chơi độc đáo."
+                    },
+        "price":  39.99,
+        "category":  "Puzzle",
+        "title":  "Game Title 21 - Puzzle",
+        "image":  "https://images.unsplash.com/photo-1500000021?w=500\u0026q=80"
+    },
+    {
+        "id":  22,
+        "description":  "Trò chơi Casual hấp dẫn số 22",
+        "details":  {
+                        "features":  [
+                                         "Gameplay độc đáo",
+                                         "Đồ họa đẹp",
+                                         "Multiplayer hỗ trợ",
+                                         "Nội dung phong phú"
+                                     ],
+                        "developer":  "Naughty Dog",
+                        "releaseDate":  2021,
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "9.1/10",
+                        "fullDescription":  "Một tựa game tuyệt vời thuộc thể loại Casual với lối chơi độc đáo."
+                    },
+        "price":  40.99,
+        "category":  "Casual",
+        "title":  "Game Title 22 - Casual",
+        "image":  "https://images.unsplash.com/photo-1500000022?w=500\u0026q=80"
+    },
+    {
+        "id":  23,
+        "description":  "Trò chơi MMO hấp dẫn số 23",
+        "details":  {
+                        "features":  [
+                                         "Gameplay độc đáo",
+                                         "Đồ họa đẹp",
+                                         "Multiplayer hỗ trợ",
+                                         "Nội dung phong phú"
+                                     ],
+                        "developer":  "Rockstar Games",
+                        "releaseDate":  2022,
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "9.2/10",
+                        "fullDescription":  "Một tựa game tuyệt vời thuộc thể loại MMO với lối chơi độc đáo."
+                    },
+        "price":  41.99,
+        "category":  "MMO",
+        "title":  "Game Title 23 - MMO",
+        "image":  "https://images.unsplash.com/photo-1500000023?w=500\u0026q=80"
+    },
+    {
+        "id":  24,
+        "description":  "Trò chơi Fighting hấp dẫn số 24",
+        "details":  {
+                        "features":  [
+                                         "Gameplay độc đáo",
+                                         "Đồ họa đẹp",
+                                         "Multiplayer hỗ trợ",
+                                         "Nội dung phong phú"
+                                     ],
+                        "developer":  "Nintendo",
+                        "releaseDate":  2023,
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "9.3/10",
+                        "fullDescription":  "Một tựa game tuyệt vời thuộc thể loại Fighting với lối chơi độc đáo."
+                    },
+        "price":  42.99,
+        "category":  "Fighting",
+        "title":  "Game Title 24 - Fighting",
+        "image":  "https://images.unsplash.com/photo-1500000024?w=500\u0026q=80"
+    },
+    {
+        "id":  25,
+        "description":  "Trò chơi Action RPG hấp dẫn số 25",
+        "details":  {
+                        "features":  [
+                                         "Gameplay độc đáo",
+                                         "Đồ họa đẹp",
+                                         "Multiplayer hỗ trợ",
+                                         "Nội dung phong phú"
+                                     ],
+                        "developer":  "Ubisoft",
+                        "releaseDate":  2020,
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "9.4/10",
+                        "fullDescription":  "Một tựa game tuyệt vời thuộc thể loại Action RPG với lối chơi độc đáo."
+                    },
+        "price":  43.99,
+        "category":  "Action RPG",
+        "title":  "Game Title 25 - Action RPG",
+        "image":  "https://images.unsplash.com/photo-1500000025?w=500\u0026q=80"
+    },
+    {
+        "id":  26,
+        "description":  "Trò chơi Sci-Fi RPG hấp dẫn số 26",
+        "details":  {
+                        "features":  [
+                                         "Gameplay độc đáo",
+                                         "Đồ họa đẹp",
+                                         "Multiplayer hỗ trợ",
+                                         "Nội dung phong phú"
+                                     ],
+                        "developer":  "Square Enix",
+                        "releaseDate":  2021,
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "9.5/10",
+                        "fullDescription":  "Một tựa game tuyệt vời thuộc thể loại Sci-Fi RPG với lối chơi độc đáo."
+                    },
+        "price":  44.99,
+        "category":  "Sci-Fi RPG",
+        "title":  "Game Title 26 - Sci-Fi RPG",
+        "image":  "https://images.unsplash.com/photo-1500000026?w=500\u0026q=80"
+    },
+    {
+        "id":  27,
+        "description":  "Trò chơi Strategy hấp dẫn số 27",
+        "details":  {
+                        "features":  [
+                                         "Gameplay độc đáo",
+                                         "Đồ họa đẹp",
+                                         "Multiplayer hỗ trợ",
+                                         "Nội dung phong phú"
+                                     ],
+                        "developer":  "Bethesda",
+                        "releaseDate":  2022,
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "9.6/10",
+                        "fullDescription":  "Một tựa game tuyệt vời thuộc thể loại Strategy với lối chơi độc đáo."
+                    },
+        "price":  45.99,
+        "category":  "Strategy",
+        "title":  "Game Title 27 - Strategy",
+        "image":  "https://images.unsplash.com/photo-1500000027?w=500\u0026q=80"
+    },
+    {
+        "id":  28,
+        "description":  "Trò chơi Shooter hấp dẫn số 28",
+        "details":  {
+                        "features":  [
+                                         "Gameplay độc đáo",
+                                         "Đồ họa đẹp",
+                                         "Multiplayer hỗ trợ",
+                                         "Nội dung phong phú"
+                                     ],
+                        "developer":  "Valve",
+                        "releaseDate":  2023,
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "9.7/10",
+                        "fullDescription":  "Một tựa game tuyệt vời thuộc thể loại Shooter với lối chơi độc đáo."
+                    },
+        "price":  46.99,
+        "category":  "Shooter",
+        "title":  "Game Title 28 - Shooter",
+        "image":  "https://images.unsplash.com/photo-1500000028?w=500\u0026q=80"
+    },
+    {
+        "id":  29,
+        "description":  "Trò chơi Racing hấp dẫn số 29",
+        "details":  {
+                        "features":  [
+                                         "Gameplay độc đáo",
+                                         "Đồ họa đẹp",
+                                         "Multiplayer hỗ trợ",
+                                         "Nội dung phong phú"
+                                     ],
+                        "developer":  "Epic Games",
+                        "releaseDate":  2020,
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "9.8/10",
+                        "fullDescription":  "Một tựa game tuyệt vời thuộc thể loại Racing với lối chơi độc đáo."
+                    },
+        "price":  47.99,
+        "category":  "Racing",
+        "title":  "Game Title 29 - Racing",
+        "image":  "https://images.unsplash.com/photo-1500000029?w=500\u0026q=80"
+    },
+    {
+        "id":  30,
+        "description":  "Trò chơi Sports hấp dẫn số 30",
+        "details":  {
+                        "features":  [
+                                         "Gameplay độc đáo",
+                                         "Đồ họa đẹp",
+                                         "Multiplayer hỗ trợ",
+                                         "Nội dung phong phú"
+                                     ],
+                        "developer":  "Activision",
+                        "releaseDate":  2021,
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "9.9/10",
+                        "fullDescription":  "Một tựa game tuyệt vời thuộc thể loại Sports với lối chơi độc đáo."
+                    },
+        "price":  48.99,
+        "category":  "Sports",
+        "title":  "Game Title 30 - Sports",
+        "image":  "https://images.unsplash.com/photo-1500000030?w=500\u0026q=80"
+    },
+    {
+        "id":  31,
+        "description":  "Trò chơi Horror hấp dẫn số 31",
+        "details":  {
+                        "features":  [
+                                         "Gameplay độc đáo",
+                                         "Đồ họa đẹp",
+                                         "Multiplayer hỗ trợ",
+                                         "Nội dung phong phú"
+                                     ],
+                        "developer":  "Infinity Ward",
+                        "releaseDate":  2022,
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "7/10",
+                        "fullDescription":  "Một tựa game tuyệt vời thuộc thể loại Horror với lối chơi độc đáo."
+                    },
+        "price":  49.99,
+        "category":  "Horror",
+        "title":  "Game Title 31 - Horror",
+        "image":  "https://images.unsplash.com/photo-1500000031?w=500\u0026q=80"
+    },
+    {
+        "id":  32,
+        "description":  "Trò chơi Adventure hấp dẫn số 32",
+        "details":  {
+                        "features":  [
+                                         "Gameplay độc đáo",
+                                         "Đồ họa đẹp",
+                                         "Multiplayer hỗ trợ",
+                                         "Nội dung phong phú"
+                                     ],
+                        "developer":  "Naughty Dog",
+                        "releaseDate":  2023,
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "7.1/10",
+                        "fullDescription":  "Một tựa game tuyệt vời thuộc thể loại Adventure với lối chơi độc đáo."
+                    },
+        "price":  50.99,
+        "category":  "Adventure",
+        "title":  "Game Title 32 - Adventure",
+        "image":  "https://images.unsplash.com/photo-1500000032?w=500\u0026q=80"
+    },
+    {
+        "id":  33,
+        "description":  "Trò chơi Puzzle hấp dẫn số 33",
+        "details":  {
+                        "features":  [
+                                         "Gameplay độc đáo",
+                                         "Đồ họa đẹp",
+                                         "Multiplayer hỗ trợ",
+                                         "Nội dung phong phú"
+                                     ],
+                        "developer":  "Rockstar Games",
+                        "releaseDate":  2020,
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "7.2/10",
+                        "fullDescription":  "Một tựa game tuyệt vời thuộc thể loại Puzzle với lối chơi độc đáo."
+                    },
+        "price":  51.99,
+        "category":  "Puzzle",
+        "title":  "Game Title 33 - Puzzle",
+        "image":  "https://images.unsplash.com/photo-1500000033?w=500\u0026q=80"
+    },
+    {
+        "id":  34,
+        "description":  "Trò chơi Casual hấp dẫn số 34",
+        "details":  {
+                        "features":  [
+                                         "Gameplay độc đáo",
+                                         "Đồ họa đẹp",
+                                         "Multiplayer hỗ trợ",
+                                         "Nội dung phong phú"
+                                     ],
+                        "developer":  "Nintendo",
+                        "releaseDate":  2021,
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "7.3/10",
+                        "fullDescription":  "Một tựa game tuyệt vời thuộc thể loại Casual với lối chơi độc đáo."
+                    },
+        "price":  52.99,
+        "category":  "Casual",
+        "title":  "Game Title 34 - Casual",
+        "image":  "https://images.unsplash.com/photo-1500000034?w=500\u0026q=80"
+    },
+    {
+        "id":  35,
+        "description":  "Trò chơi MMO hấp dẫn số 35",
+        "details":  {
+                        "features":  [
+                                         "Gameplay độc đáo",
+                                         "Đồ họa đẹp",
+                                         "Multiplayer hỗ trợ",
+                                         "Nội dung phong phú"
+                                     ],
+                        "developer":  "Ubisoft",
+                        "releaseDate":  2022,
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "7.4/10",
+                        "fullDescription":  "Một tựa game tuyệt vời thuộc thể loại MMO với lối chơi độc đáo."
+                    },
+        "price":  53.99,
+        "category":  "MMO",
+        "title":  "Game Title 35 - MMO",
+        "image":  "https://images.unsplash.com/photo-1500000035?w=500\u0026q=80"
+    },
+    {
+        "id":  36,
+        "description":  "Trò chơi Fighting hấp dẫn số 36",
+        "details":  {
+                        "features":  [
+                                         "Gameplay độc đáo",
+                                         "Đồ họa đẹp",
+                                         "Multiplayer hỗ trợ",
+                                         "Nội dung phong phú"
+                                     ],
+                        "developer":  "Square Enix",
+                        "releaseDate":  2023,
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "7.5/10",
+                        "fullDescription":  "Một tựa game tuyệt vời thuộc thể loại Fighting với lối chơi độc đáo."
+                    },
+        "price":  54.99,
+        "category":  "Fighting",
+        "title":  "Game Title 36 - Fighting",
+        "image":  "https://images.unsplash.com/photo-1500000036?w=500\u0026q=80"
+    },
+    {
+        "id":  37,
+        "description":  "Trò chơi Action RPG hấp dẫn số 37",
+        "details":  {
+                        "features":  [
+                                         "Gameplay độc đáo",
+                                         "Đồ họa đẹp",
+                                         "Multiplayer hỗ trợ",
+                                         "Nội dung phong phú"
+                                     ],
+                        "developer":  "Bethesda",
+                        "releaseDate":  2020,
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "7.6/10",
+                        "fullDescription":  "Một tựa game tuyệt vời thuộc thể loại Action RPG với lối chơi độc đáo."
+                    },
+        "price":  55.99,
+        "category":  "Action RPG",
+        "title":  "Game Title 37 - Action RPG",
+        "image":  "https://images.unsplash.com/photo-1500000037?w=500\u0026q=80"
+    },
+    {
+        "id":  38,
+        "description":  "Trò chơi Sci-Fi RPG hấp dẫn số 38",
+        "details":  {
+                        "features":  [
+                                         "Gameplay độc đáo",
+                                         "Đồ họa đẹp",
+                                         "Multiplayer hỗ trợ",
+                                         "Nội dung phong phú"
+                                     ],
+                        "developer":  "Valve",
+                        "releaseDate":  2021,
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "7.7/10",
+                        "fullDescription":  "Một tựa game tuyệt vời thuộc thể loại Sci-Fi RPG với lối chơi độc đáo."
+                    },
+        "price":  56.99,
+        "category":  "Sci-Fi RPG",
+        "title":  "Game Title 38 - Sci-Fi RPG",
+        "image":  "https://images.unsplash.com/photo-1500000038?w=500\u0026q=80"
+    },
+    {
+        "id":  39,
+        "description":  "Trò chơi Strategy hấp dẫn số 39",
+        "details":  {
+                        "features":  [
+                                         "Gameplay độc đáo",
+                                         "Đồ họa đẹp",
+                                         "Multiplayer hỗ trợ",
+                                         "Nội dung phong phú"
+                                     ],
+                        "developer":  "Epic Games",
+                        "releaseDate":  2022,
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "7.8/10",
+                        "fullDescription":  "Một tựa game tuyệt vời thuộc thể loại Strategy với lối chơi độc đáo."
+                    },
+        "price":  57.99,
+        "category":  "Strategy",
+        "title":  "Game Title 39 - Strategy",
+        "image":  "https://images.unsplash.com/photo-1500000039?w=500\u0026q=80"
+    },
+    {
+        "id":  40,
+        "description":  "Trò chơi Shooter hấp dẫn số 40",
+        "details":  {
+                        "features":  [
+                                         "Gameplay độc đáo",
+                                         "Đồ họa đẹp",
+                                         "Multiplayer hỗ trợ",
+                                         "Nội dung phong phú"
+                                     ],
+                        "developer":  "Activision",
+                        "releaseDate":  2023,
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "7.9/10",
+                        "fullDescription":  "Một tựa game tuyệt vời thuộc thể loại Shooter với lối chơi độc đáo."
+                    },
+        "price":  58.99,
+        "category":  "Shooter",
+        "title":  "Game Title 40 - Shooter",
+        "image":  "https://images.unsplash.com/photo-1500000040?w=500\u0026q=80"
+    },
+    {
+        "id":  41,
+        "description":  "Trò chơi Racing hấp dẫn số 41",
+        "details":  {
+                        "features":  [
+                                         "Gameplay độc đáo",
+                                         "Đồ họa đẹp",
+                                         "Multiplayer hỗ trợ",
+                                         "Nội dung phong phú"
+                                     ],
+                        "developer":  "Infinity Ward",
+                        "releaseDate":  2020,
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "8/10",
+                        "fullDescription":  "Một tựa game tuyệt vời thuộc thể loại Racing với lối chơi độc đáo."
+                    },
+        "price":  59.99,
+        "category":  "Racing",
+        "title":  "Game Title 41 - Racing",
+        "image":  "https://images.unsplash.com/photo-1500000041?w=500\u0026q=80"
+    },
+    {
+        "id":  42,
+        "description":  "Trò chơi Sports hấp dẫn số 42",
+        "details":  {
+                        "features":  [
+                                         "Gameplay độc đáo",
+                                         "Đồ họa đẹp",
+                                         "Multiplayer hỗ trợ",
+                                         "Nội dung phong phú"
+                                     ],
+                        "developer":  "Naughty Dog",
+                        "releaseDate":  2021,
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "8.1/10",
+                        "fullDescription":  "Một tựa game tuyệt vời thuộc thể loại Sports với lối chơi độc đáo."
+                    },
+        "price":  60.99,
+        "category":  "Sports",
+        "title":  "Game Title 42 - Sports",
+        "image":  "https://images.unsplash.com/photo-1500000042?w=500\u0026q=80"
+    },
+    {
+        "id":  43,
+        "description":  "Trò chơi Horror hấp dẫn số 43",
+        "details":  {
+                        "features":  [
+                                         "Gameplay độc đáo",
+                                         "Đồ họa đẹp",
+                                         "Multiplayer hỗ trợ",
+                                         "Nội dung phong phú"
+                                     ],
+                        "developer":  "Rockstar Games",
+                        "releaseDate":  2022,
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "8.2/10",
+                        "fullDescription":  "Một tựa game tuyệt vời thuộc thể loại Horror với lối chơi độc đáo."
+                    },
+        "price":  61.99,
+        "category":  "Horror",
+        "title":  "Game Title 43 - Horror",
+        "image":  "https://images.unsplash.com/photo-1500000043?w=500\u0026q=80"
+    },
+    {
+        "id":  44,
+        "description":  "Trò chơi Adventure hấp dẫn số 44",
+        "details":  {
+                        "features":  [
+                                         "Gameplay độc đáo",
+                                         "Đồ họa đẹp",
+                                         "Multiplayer hỗ trợ",
+                                         "Nội dung phong phú"
+                                     ],
+                        "developer":  "Nintendo",
+                        "releaseDate":  2023,
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "8.3/10",
+                        "fullDescription":  "Một tựa game tuyệt vời thuộc thể loại Adventure với lối chơi độc đáo."
+                    },
+        "price":  62.99,
+        "category":  "Adventure",
+        "title":  "Game Title 44 - Adventure",
+        "image":  "https://images.unsplash.com/photo-1500000044?w=500\u0026q=80"
+    },
+    {
+        "id":  45,
+        "description":  "Trò chơi Puzzle hấp dẫn số 45",
+        "details":  {
+                        "features":  [
+                                         "Gameplay độc đáo",
+                                         "Đồ họa đẹp",
+                                         "Multiplayer hỗ trợ",
+                                         "Nội dung phong phú"
+                                     ],
+                        "developer":  "Ubisoft",
+                        "releaseDate":  2020,
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "8.4/10",
+                        "fullDescription":  "Một tựa game tuyệt vời thuộc thể loại Puzzle với lối chơi độc đáo."
+                    },
+        "price":  63.99,
+        "category":  "Puzzle",
+        "title":  "Game Title 45 - Puzzle",
+        "image":  "https://images.unsplash.com/photo-1500000045?w=500\u0026q=80"
+    },
+    {
+        "id":  46,
+        "description":  "Trò chơi Casual hấp dẫn số 46",
+        "details":  {
+                        "features":  [
+                                         "Gameplay độc đáo",
+                                         "Đồ họa đẹp",
+                                         "Multiplayer hỗ trợ",
+                                         "Nội dung phong phú"
+                                     ],
+                        "developer":  "Square Enix",
+                        "releaseDate":  2021,
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "8.5/10",
+                        "fullDescription":  "Một tựa game tuyệt vời thuộc thể loại Casual với lối chơi độc đáo."
+                    },
+        "price":  64.99,
+        "category":  "Casual",
+        "title":  "Game Title 46 - Casual",
+        "image":  "https://images.unsplash.com/photo-1500000046?w=500\u0026q=80"
+    },
+    {
+        "id":  47,
+        "description":  "Trò chơi MMO hấp dẫn số 47",
+        "details":  {
+                        "features":  [
+                                         "Gameplay độc đáo",
+                                         "Đồ họa đẹp",
+                                         "Multiplayer hỗ trợ",
+                                         "Nội dung phong phú"
+                                     ],
+                        "developer":  "Bethesda",
+                        "releaseDate":  2022,
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "8.6/10",
+                        "fullDescription":  "Một tựa game tuyệt vời thuộc thể loại MMO với lối chơi độc đáo."
+                    },
+        "price":  65.99,
+        "category":  "MMO",
+        "title":  "Game Title 47 - MMO",
+        "image":  "https://images.unsplash.com/photo-1500000047?w=500\u0026q=80"
+    },
+    {
+        "id":  48,
+        "description":  "Trò chơi Fighting hấp dẫn số 48",
+        "details":  {
+                        "features":  [
+                                         "Gameplay độc đáo",
+                                         "Đồ họa đẹp",
+                                         "Multiplayer hỗ trợ",
+                                         "Nội dung phong phú"
+                                     ],
+                        "developer":  "Valve",
+                        "releaseDate":  2023,
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "8.7/10",
+                        "fullDescription":  "Một tựa game tuyệt vời thuộc thể loại Fighting với lối chơi độc đáo."
+                    },
+        "price":  66.99,
+        "category":  "Fighting",
+        "title":  "Game Title 48 - Fighting",
+        "image":  "https://images.unsplash.com/photo-1500000048?w=500\u0026q=80"
+    },
+    {
+        "id":  49,
+        "description":  "Trò chơi Action RPG hấp dẫn số 49",
+        "details":  {
+                        "features":  [
+                                         "Gameplay độc đáo",
+                                         "Đồ họa đẹp",
+                                         "Multiplayer hỗ trợ",
+                                         "Nội dung phong phú"
+                                     ],
+                        "developer":  "Epic Games",
+                        "releaseDate":  2020,
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "8.8/10",
+                        "fullDescription":  "Một tựa game tuyệt vời thuộc thể loại Action RPG với lối chơi độc đáo."
+                    },
+        "price":  67.99,
+        "category":  "Action RPG",
+        "title":  "Game Title 49 - Action RPG",
+        "image":  "https://images.unsplash.com/photo-1500000049?w=500\u0026q=80"
+    },
+    {
+        "id":  50,
+        "description":  "Trò chơi Sci-Fi RPG hấp dẫn số 50",
+        "details":  {
+                        "features":  [
+                                         "Gameplay độc đáo",
+                                         "Đồ họa đẹp",
+                                         "Multiplayer hỗ trợ",
+                                         "Nội dung phong phú"
+                                     ],
+                        "developer":  "Activision",
+                        "releaseDate":  2021,
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "8.9/10",
+                        "fullDescription":  "Một tựa game tuyệt vời thuộc thể loại Sci-Fi RPG với lối chơi độc đáo."
+                    },
+        "price":  68.99,
+        "category":  "Sci-Fi RPG",
+        "title":  "Game Title 50 - Sci-Fi RPG",
+        "image":  "https://images.unsplash.com/photo-1500000050?w=500\u0026q=80"
+    },
+    {
+        "id":  51,
+        "description":  "Trò chơi Strategy hấp dẫn số 51",
+        "details":  {
+                        "features":  [
+                                         "Gameplay độc đáo",
+                                         "Đồ họa đẹp",
+                                         "Multiplayer hỗ trợ",
+                                         "Nội dung phong phú"
+                                     ],
+                        "developer":  "Infinity Ward",
+                        "releaseDate":  2022,
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "9/10",
+                        "fullDescription":  "Một tựa game tuyệt vời thuộc thể loại Strategy với lối chơi độc đáo."
+                    },
+        "price":  69.99,
+        "category":  "Strategy",
+        "title":  "Game Title 51 - Strategy",
+        "image":  "https://images.unsplash.com/photo-1500000051?w=500\u0026q=80"
+    },
+    {
+        "id":  52,
+        "description":  "Trò chơi Shooter hấp dẫn số 52",
+        "details":  {
+                        "features":  [
+                                         "Gameplay độc đáo",
+                                         "Đồ họa đẹp",
+                                         "Multiplayer hỗ trợ",
+                                         "Nội dung phong phú"
+                                     ],
+                        "developer":  "Naughty Dog",
+                        "releaseDate":  2023,
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "9.1/10",
+                        "fullDescription":  "Một tựa game tuyệt vời thuộc thể loại Shooter với lối chơi độc đáo."
+                    },
+        "price":  70.99,
+        "category":  "Shooter",
+        "title":  "Game Title 52 - Shooter",
+        "image":  "https://images.unsplash.com/photo-1500000052?w=500\u0026q=80"
+    },
+    {
+        "id":  53,
+        "description":  "Trò chơi Racing hấp dẫn số 53",
+        "details":  {
+                        "features":  [
+                                         "Gameplay độc đáo",
+                                         "Đồ họa đẹp",
+                                         "Multiplayer hỗ trợ",
+                                         "Nội dung phong phú"
+                                     ],
+                        "developer":  "Rockstar Games",
+                        "releaseDate":  2020,
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "9.2/10",
+                        "fullDescription":  "Một tựa game tuyệt vời thuộc thể loại Racing với lối chơi độc đáo."
+                    },
+        "price":  71.99,
+        "category":  "Racing",
+        "title":  "Game Title 53 - Racing",
+        "image":  "https://images.unsplash.com/photo-1500000053?w=500\u0026q=80"
     }
-  },
-  {
-    "id": 2,
-    "title": "Cyberpunk 2077",
-    "category": "Sci-Fi / Open World",
-    "price": 39.99,
-    "image": "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=500&q=80",
-    "description": "Khám phá thành phố tương lai Night City đầy rẫy tội phạm.",
-    "details": {
-      "releaseDate": "2020",
-      "platform": "PC, PlayStation 5, Xbox Series X|S",
-      "developer": "CD Projekt Red",
-      "rating": "8.5/10",
-      "fullDescription": "Cyberpunk 2077 là một trò chơi nhập vai hành động trong thế giới mở được thiết lập ở thành phố tương lai Night City. Bạn sẽ đóng vai một nhân vật tự tạo và tham gia vào các nhiệm vụ kỳ quặc.",
-      "features": [
-        "Hệ thống lựa chọn chi tiết ảnh hưởng đến câu chuyện",
-        "Thành phố mở rộng lớn với nội dung phong phú",
-        "Nhân vật được tùy chỉnh hoàn toàn",
-        "Cốt truyện sâu sắc và tương tác"
-      ]
-    }
-  },
-  {
-    "id": 3,
-    "title": "Elden Ring",
-    "category": "Souls-like",
-    "price": 49.99,
-    "image": "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=500&q=80",
-    "description": "Hành trình trở thành Elden Lord trong thế giới mở rộng lớn.",
-    "details": {
-      "releaseDate": "2022",
-      "platform": "PC, PlayStation 4/5, Xbox One/Series X|S",
-      "developer": "FromSoftware",
-      "rating": "9.5/10",
-      "fullDescription": "Elden Ring là một masterpiece trong thể loại souls-like, được phát triển bởi FromSoftware và được đạo diễn bởi Hidetaka Miyazaki. Hành trình của bạn là trở thành Elden Lord trong một thế giới mở rộng lớn đầy thách thức.",
-      "features": [
-        "Thế giới mở rộng đầu tiên của FromSoftware",
-        "Hệ thống chiến đấu đầy thách thức nhưng công bằng",
-        "Câu chuyện sâu sắc cùng lore phong phú",
-        "Chế độ multiplayer cho phép hợp tác và PvP"
-      ]
-    }
-  }
 ]
