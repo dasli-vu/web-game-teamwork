@@ -26,7 +26,8 @@ function Product({ game, addToCart }) {
         </div>
       </div>
     </div>
+    </div>
   );
 }
 
-export default Product;
+export default Product; 
