@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import Product from './Product';
-import gamesData from './database.json'; // Đã sửa lỗi đường dẫn gọi database cùng cấp thư mục
+import GameModal from './GameModal';
+import gamesData from './database.json';
 
-function Home({ addToCart }) {
+function Home({ addToCart, onBuyNow }) {
   const [searchTerm, setSearchTerm] = useState('');
+  const [selectedGame, setSelectedGame] = useState(null);
 
   const filteredGames = gamesData.filter(game =>
     game.title.toLowerCase().includes(searchTerm.toLowerCase())
@@ -20,7 +22,7 @@ function Home({ addToCart }) {
               className="form-control text-center" 
               placeholder="Tìm kiếm tựa game yêu thích..." 
               value={searchTerm}
-              onChange={(e) => setSearchTerm(e.value)}
+              onChange={(e) => setSearchTerm(e.target.value)}
             />
           </div>
         </div>
@@ -30,10 +32,24 @@ function Home({ addToCart }) {
         <h3 className="mb-4 fw-bold">🔥 Sản phẩm nổi bật</h3>
         <div className="row">
           {filteredGames.map(game => (
-            <Product key={game.id} game={game} addToCart={addToCart} />
+            <Product 
+              key={game.id} 
+              game={game} 
+              addToCart={addToCart}
+              onCardClick={setSelectedGame}
+              onBuyNow={onBuyNow}
+            />
           ))}
         </div>
       </div>
+
+      {selectedGame && (
+        <GameModal 
+          game={selectedGame}
+          onClose={() => setSelectedGame(null)}
+          onBuyNow={onBuyNow}
+        />
+      )}
     </div>
   );
 }
