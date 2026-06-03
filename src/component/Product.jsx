@@ -54,7 +54,8 @@ function Product({ game, addToCart, onCardClick, onBuyNow }) {
         </div>
       </div>
     </div>
+    </div>
   );
 }
 
-export default Product;
+export default Product; 
