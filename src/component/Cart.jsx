@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Cart({ cartItems, removeFromCart, clearCart }) {
+function Cart({ cartItems, removeFromCart, clearCart, onCheckout }) {
   // Hàm tính tổng tiền của tất cả các game trong giỏ
   const totalPayment = cartItems.reduce((total, item) => total + item.price, 0);
 
@@ -78,6 +78,7 @@ function Cart({ cartItems, removeFromCart, clearCart }) {
               className="btn btn-warning w-100 fw-bold py-2 shadow-sm" 
               disabled={cartItems.length === 0}
               onClick={() => alert("Thanh toán thành công")}
+              onClick={onCheckout}
             >
               💳 TIẾN HÀNH THANH TOÁN
             </button>
