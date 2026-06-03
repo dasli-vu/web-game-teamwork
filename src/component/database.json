@@ -5,7 +5,20 @@
     "category": "Action RPG",
     "price": 59.99,
     "image": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=500&q=80",
-    "description": "Trò chơi hành động nhập vai dựa trên tiểu thuyết Tây Du Ký."
+    "description": "Trò chơi hành động nhập vai dựa trên tiểu thuyết Tây Du Ký.",
+    "details": {
+      "releaseDate": "2024",
+      "platform": "PC, PlayStation 5, Xbox Series X|S",
+      "developer": "Game Science",
+      "rating": "9.2/10",
+      "fullDescription": "Black Myth: Wukong là một tựa game hành động nhập vai xuất sắc được phát triển dựa trên tiểu thuyết kinh điển Tây Du Ký. Trò chơi mang đến trải nghiệm chiến đấu sôi động, thế giới rộng lớn và cốt truyện hấp dẫn.",
+      "features": [
+        "Hệ thống chiến đấu phức tạp với nhiều kỹ năng",
+        "Thế giới mở rộng lớn để khám phá",
+        "Câu chuyện dựa trên tiểu thuyết kinh điển",
+        "Đồ họa tuyệt đẹp"
+      ]
+    }
   },
   {
     "id": 2,
@@ -13,7 +26,20 @@
     "category": "Sci-Fi / Open World",
     "price": 39.99,
     "image": "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=500&q=80",
-    "description": "Khám phá thành phố tương lai Night City đầy rẫy tội phạm."
+    "description": "Khám phá thành phố tương lai Night City đầy rẫy tội phạm.",
+    "details": {
+      "releaseDate": "2020",
+      "platform": "PC, PlayStation 5, Xbox Series X|S",
+      "developer": "CD Projekt Red",
+      "rating": "8.5/10",
+      "fullDescription": "Cyberpunk 2077 là một trò chơi nhập vai hành động trong thế giới mở được thiết lập ở thành phố tương lai Night City. Bạn sẽ đóng vai một nhân vật tự tạo và tham gia vào các nhiệm vụ kỳ quặc.",
+      "features": [
+        "Hệ thống lựa chọn chi tiết ảnh hưởng đến câu chuyện",
+        "Thành phố mở rộng lớn với nội dung phong phú",
+        "Nhân vật được tùy chỉnh hoàn toàn",
+        "Cốt truyện sâu sắc và tương tác"
+      ]
+    }
   },
   {
     "id": 3,
@@ -21,6 +47,19 @@
     "category": "Souls-like",
     "price": 49.99,
     "image": "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=500&q=80",
-    "description": "Hành trình trở thành Elden Lord trong thế giới mở rộng lớn."
+    "description": "Hành trình trở thành Elden Lord trong thế giới mở rộng lớn.",
+    "details": {
+      "releaseDate": "2022",
+      "platform": "PC, PlayStation 4/5, Xbox One/Series X|S",
+      "developer": "FromSoftware",
+      "rating": "9.5/10",
+      "fullDescription": "Elden Ring là một masterpiece trong thể loại souls-like, được phát triển bởi FromSoftware và được đạo diễn bởi Hidetaka Miyazaki. Hành trình của bạn là trở thành Elden Lord trong một thế giới mở rộng lớn đầy thách thức.",
+      "features": [
+        "Thế giới mở rộng đầu tiên của FromSoftware",
+        "Hệ thống chiến đấu đầy thách thức nhưng công bằng",
+        "Câu chuyện sâu sắc cùng lore phong phú",
+        "Chế độ multiplayer cho phép hợp tác và PvP"
+      ]
+    }
   }
 ]

@@ -3,12 +3,17 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Menu from './component/Menu';
 import Home from './component/Home';
 import Cart from './component/Cart';
+import Checkout from './component/Checkout';
+import OrderHistory from './component/OrderHistory';
 import Login from './component/Login';
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [currentUser, setCurrentUser] = useState(null);
   const [cart, setCart] = useState([]);
+  const [currentPage, setCurrentPage] = useState('home');
+  const [directPurchaseItems, setDirectPurchaseItems] = useState(null);
+  const [showCheckout, setShowCheckout] = useState(false);
   const [showLoginModal, setShowLoginModal] = useState(false);
 
   // Kiểm tra user đã login hay chưa khi component load
@@ -55,6 +60,16 @@ function App() {
     }
   };
 
+  // Hàm mua ngay - bỏ qua giỏ hàng
+  const handleBuyNow = (game) => {
+    setDirectPurchaseItems([game]);
+    setShowCheckout(true);
+  };
+
+  return (
+    <div className="bg-light min-vh-100">
+      {/* Truyền số lượng giỏ hàng vào Menu để hiển thị số lượng */}
+      <Menu cartCount={cart.length} onNavigate={setCurrentPage} />
   // Nếu chưa login, hiển thị Home + Menu + Login Modal
   return (
     <div className="bg-light min-vh-100">
@@ -77,14 +92,42 @@ function App() {
       {/* Hiển thị trang chủ danh sách sản phẩm */}
       <Home addToCart={addToCart} />
       
-      <hr className="my-5" />
+      {/* Hiển thị trang dựa vào currentPage */}
+      {currentPage === 'home' && (
+        <>
+          {/* Hiển thị trang chủ danh sách sản phẩm */}
+          <Home addToCart={addToCart} onBuyNow={handleBuyNow} />
+          
+          <hr className="my-5" />
 
-      {/* Hiển thị khu vực Giỏ hàng ở phía dưới */}
-      <Cart 
-        cartItems={cart} 
-        removeFromCart={removeFromCart} 
-        clearCart={clearCart} 
-      />
+          {/* Hiển thị khu vực Giỏ hàng ở phía dưới */}
+          <Cart 
+            cartItems={cart} 
+            removeFromCart={removeFromCart} 
+            clearCart={clearCart}
+            onCheckout={() => setShowCheckout(true)}
+          />
+        </>
+      )}
+
+      {currentPage === 'orders' && <OrderHistory />}
+
+      {/* Checkout Modal */}
+      {showCheckout && (
+        <Checkout
+          cartItems={directPurchaseItems || cart}
+          onClose={() => {
+            setShowCheckout(false);
+            setDirectPurchaseItems(null);
+          }}
+          onOrderComplete={() => {
+            setShowCheckout(false);
+            setDirectPurchaseItems(null);
+            clearCart();
+          }}
+          isDirectPurchase={!!directPurchaseItems}
+        />
+      )}
     </div>
   );
 }
