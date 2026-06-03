@@ -5,23 +5,22 @@ import Home from './component/Home';
 import Cart from './component/Cart';
 import Dashboard from './component/Dashboard';
 import initialGamesData from './component/database.json';
-
-function App() {
-  const [view, setView] = useState('shop'); // Điều hướng giữa 'shop' và 'admin'
-  const [games, setGames] = useState(initialGamesData); // Quản lý mảng danh sách game tập trung
-  const [cart, setCart] = useState([]); // Trạng thái sản phẩm mua trong giỏ hàng
 import Checkout from './component/Checkout';
 import OrderHistory from './component/OrderHistory';
 import Login from './component/Login';
+import AdminLogin from './component/AdminLogin';
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [currentUser, setCurrentUser] = useState(null);
+  const [isAdminLoggedIn, setIsAdminLoggedIn] = useState(false);
   const [cart, setCart] = useState([]);
   const [currentPage, setCurrentPage] = useState('home');
   const [directPurchaseItems, setDirectPurchaseItems] = useState(null);
   const [showCheckout, setShowCheckout] = useState(false);
   const [showLoginModal, setShowLoginModal] = useState(false);
+  const [showAdminLoginModal, setShowAdminLoginModal] = useState(false);
+  const [games, setGames] = useState(initialGamesData);
 
   // Kiểm tra user đã login hay chưa khi component load
   useEffect(() => {
@@ -30,6 +29,11 @@ function App() {
       setIsLoggedIn(true);
       setCurrentUser(JSON.parse(user));
     }
+
+    const adminUser = localStorage.getItem('adminUser');
+    if (adminUser) {
+      setIsAdminLoggedIn(true);
+    }
   }, []);
 
   // Hàm xử lý đăng nhập thành công
@@ -37,6 +41,13 @@ function App() {
     const user = JSON.parse(localStorage.getItem('currentUser'));
     setCurrentUser(user);
     setIsLoggedIn(true);
+    setCurrentPage('home');
+  };
+
+  // Hàm xử lý admin đăng nhập thành công
+  const handleAdminLoginSuccess = () => {
+    setIsAdminLoggedIn(true);
+    setCurrentPage('admin');
   };
 
   // Hàm xử lý đăng xuất
@@ -46,6 +57,16 @@ function App() {
       setIsLoggedIn(false);
       setCurrentUser(null);
       setCart([]);
+      setCurrentPage('home');
+    }
+  };
+
+  // Hàm xử lý admin đăng xuất
+  const handleAdminLogout = () => {
+    if (window.confirm('Bạn có chắc chắn muốn đăng xuất khỏi Admin?')) {
+      localStorage.removeItem('adminUser');
+      setIsAdminLoggedIn(false);
+      setCurrentPage('home');
     }
   };
 
@@ -79,6 +100,8 @@ function App() {
     if (window.confirm("Bạn có chắc chắn muốn xóa tựa game này khỏi cửa hàng không?")) {
       setGames(games.filter(g => g.id !== gameId));
     }
+  };
+
   // Hàm mua ngay - bỏ qua giỏ hàng
   const handleBuyNow = (game) => {
     setDirectPurchaseItems([game]);
@@ -87,32 +110,17 @@ function App() {
 
   return (
     <div className="bg-light min-vh-100">
-      <Menu cartCount={cart.length} currentView={view} onViewChange={setView} />
-      
-      {view === 'shop' ? (
-        <>
-          <Home gamesData={games} addToCart={addToCart} />
-          <hr className="my-5" />
-          <Cart cartItems={cart} removeFromCart={removeFromCart} clearCart={clearCart} />
-        </>
-      ) : (
-        <Dashboard 
-          games={games} 
-          onAddGame={handleAddGame} 
-          onUpdateGame={handleUpdateGame} 
-          onDeleteGame={onDeleteGame} 
-      {/* Truyền số lượng giỏ hàng vào Menu để hiển thị số lượng */}
-      <Menu cartCount={cart.length} onNavigate={setCurrentPage} />
-  // Nếu chưa login, hiển thị Home + Menu + Login Modal
-  return (
-    <div className="bg-light min-vh-100">
       {/* Menu navbar */}
       <Menu 
         cartCount={cart.length} 
         currentUser={currentUser}
         isLoggedIn={isLoggedIn}
+        isAdminLoggedIn={isAdminLoggedIn}
         onLogout={handleLogout}
+        onAdminLogout={handleAdminLogout}
         onLoginClick={() => setShowLoginModal(true)}
+        onAdminLoginClick={() => setShowAdminLoginModal(true)}
+        onNavigate={setCurrentPage}
       />
       
       {/* Login Modal */}
@@ -121,15 +129,19 @@ function App() {
         onHide={() => setShowLoginModal(false)}
         onLoginSuccess={handleLoginSuccess}
       />
-      
-      {/* Hiển thị trang chủ danh sách sản phẩm */}
-      <Home addToCart={addToCart} />
+
+      {/* Admin Login Modal */}
+      <AdminLogin
+        show={showAdminLoginModal}
+        onHide={() => setShowAdminLoginModal(false)}
+        onLoginSuccess={handleAdminLoginSuccess}
+      />
       
       {/* Hiển thị trang dựa vào currentPage */}
       {currentPage === 'home' && (
         <>
           {/* Hiển thị trang chủ danh sách sản phẩm */}
-          <Home addToCart={addToCart} onBuyNow={handleBuyNow} />
+          <Home gamesData={games} addToCart={addToCart} onBuyNow={handleBuyNow} />
           
           <hr className="my-5" />
 
@@ -143,7 +155,16 @@ function App() {
         </>
       )}
 
-      {currentPage === 'orders' && <OrderHistory />}
+      {currentPage === 'orders' && isLoggedIn && <OrderHistory />}
+
+      {currentPage === 'admin' && isAdminLoggedIn && (
+        <Dashboard 
+          games={games} 
+          onAddGame={handleAddGame} 
+          onUpdateGame={handleUpdateGame} 
+          onDeleteGame={onDeleteGame} 
+        />
+      )}
 
       {/* Checkout Modal */}
       {showCheckout && (

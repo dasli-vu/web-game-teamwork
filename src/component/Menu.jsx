@@ -1,29 +1,6 @@
 import React from 'react';
 
-function Menu({ cartCount, currentView, onViewChange }) {
-  return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
-      <div className="container">
-        <button className="navbar-brand fw-bold text-warning btn bg-transparent border-0 p-0" onClick={() => onViewChange('shop')}>
-          🎮 GAME STORE
-        </button>
-        <div className="collapse navbar-collapse id=navbarNav">
-          <ul className="navbar-nav me-auto">
-            <li className="nav-item">
-              <button className={`nav-link btn border-0 ${currentView === 'shop' ? 'active fw-bold text-warning' : 'text-light'}`} onClick={() => onViewChange('shop')}>
-                Cửa hàng
-              </button>
-            </li>
-            <li className="nav-item">
-              <button className={`nav-link btn border-0 ${currentView === 'admin' ? 'active fw-bold text-warning' : 'text-light'}`} onClick={() => onViewChange('admin')}>
-                💼 Dashboard Admin
-              </button>
-            </li>
-          </ul>
-          
-          {currentView === 'shop' && (
-function Menu({ cartCount, onNavigate }) {
-function Menu({ cartCount, currentUser, isLoggedIn, onLogout, onLoginClick }) {
+function Menu({ cartCount, currentUser, isLoggedIn, isAdminLoggedIn, onLogout, onAdminLogout, onLoginClick, onAdminLoginClick, onNavigate }) {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
       <div className="container">
@@ -34,6 +11,9 @@ function Menu({ cartCount, currentUser, isLoggedIn, onLogout, onLoginClick }) {
         >
           🎮 GAME STORE
         </a>
+        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span className="navbar-toggler-icon"></span>
+        </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav me-auto">
             <li className="nav-item">
@@ -45,60 +25,92 @@ function Menu({ cartCount, currentUser, isLoggedIn, onLogout, onLoginClick }) {
                 Cửa hàng
               </a>
             </li>
-            <li className="nav-item">
-              <a 
-                className="nav-link" 
-                href="#orders"
-                onClick={() => onNavigate('orders')}
-              >
-                📜 Lịch sử đơn hàng
-              </a>
-            </li>
-          </ul>
-          <button 
-            className="btn btn-outline-warning position-relative"
-            onClick={() => onNavigate('home')}
-          >
-            🛒 Giỏ hàng
-            {cartCount > 0 && (
-              <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                {cartCount}
-          <div className="d-flex align-items-center gap-3">
-            {/* Hiển thị thông tin user nếu đã login */}
             {isLoggedIn && (
-              <span className="text-light">
+              <li className="nav-item">
+                <a 
+                  className="nav-link" 
+                  href="#orders"
+                  onClick={() => onNavigate('orders')}
+                >
+                  📜 Lịch sử đơn hàng
+                </a>
+              </li>
+            )}
+            {isAdminLoggedIn && (
+              <li className="nav-item">
+                <a 
+                  className="nav-link" 
+                  href="#admin"
+                  onClick={() => onNavigate('admin')}
+                >
+                  ⚙️ Dashboard Admin
+                </a>
+              </li>
+            )}
+          </ul>
+          <div className="d-flex align-items-center gap-2">
+            {/* Hiển thị thông tin user nếu đã login */}
+            {isLoggedIn && !isAdminLoggedIn && (
+              <span className="text-light me-2">
                 👤 {currentUser?.fullName}
               </span>
             )}
-            
-            {/* Nút giỏ hàng */}
-            <button className="btn btn-outline-warning position-relative">
-              🛒 Giỏ hàng
-              {cartCount > 0 && (
-                <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                  {cartCount}
-                </span>
-              )}
-            </button>
-          )}
 
-            {/* Nút đăng nhập - chỉ hiển thị khi chưa login */}
-            {!isLoggedIn && (
+            {isAdminLoggedIn && (
+              <span className="text-warning me-2 fw-bold">
+                🔐 Admin Mode
+              </span>
+            )}
+            
+            {/* Nút giỏ hàng - chỉ hiển thị khi không phải admin */}
+            {!isAdminLoggedIn && (
+              <button className="btn btn-outline-warning position-relative me-2">
+                🛒 Giỏ hàng
+                {cartCount > 0 && (
+                  <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    {cartCount}
+                  </span>
+                )}
+              </button>
+            )}
+
+            {/* Nút Admin Login - chỉ hiển thị khi chưa login admin */}
+            {!isAdminLoggedIn && (
               <button 
-                className="btn btn-outline-success" 
+                className="btn btn-outline-danger me-2" 
+                onClick={onAdminLoginClick}
+              >
+                🔐 Admin
+              </button>
+            )}
+
+            {/* Nút đăng nhập - chỉ hiển thị khi chưa login user */}
+            {!isLoggedIn && !isAdminLoggedIn && (
+              <button 
+                className="btn btn-outline-success me-2" 
                 onClick={onLoginClick}
               >
                 👤 Đăng Nhập
               </button>
             )}
 
-            {/* Nút đăng xuất - chỉ hiển thị khi đã login */}
-            {isLoggedIn && (
+            {/* Nút đăng xuất user - chỉ hiển thị khi đã login user */}
+            {isLoggedIn && !isAdminLoggedIn && (
               <button 
                 className="btn btn-danger" 
                 onClick={onLogout}
               >
                 🚪 Đăng Xuất
+              </button>
+            )}
+
+            {/* Nút đăng xuất admin - chỉ hiển thị khi đã login admin */}
+            {isAdminLoggedIn && (
+              <button 
+                className="btn btn-danger" 
+                onClick={onAdminLogout}
+              >
+                🚪 Exit Admin
               </button>
             )}
           </div>
