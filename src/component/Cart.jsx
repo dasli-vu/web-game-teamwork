@@ -1,86 +1,121 @@
 import React from 'react';
 
 function Cart({ cartItems, removeFromCart, clearCart, onCheckout }) {
-  // Hàm tính tổng tiền của tất cả các game trong giỏ
   const totalPayment = cartItems.reduce((total, item) => total + item.price, 0);
 
   return (
-    <div className="container my-5">
-      <h3 className="mb-4 fw-bold text-dark">🛒 Giỏ Hàng Của Bạn</h3>
+    <div className="container-fluid my-5">
+      <h3 className="mb-4 fw-bold text-dark ps-3">🛒 Giỏ Hàng Của Bạn</h3>
       
-      <div className="row">
+      <div className="row g-4">
         {/* Cột hiển thị danh sách sản phẩm trong giỏ (Bên trái) */}
         <div className="col-lg-8">
           {cartItems.length === 0 ? (
-            <div className="card shadow-sm p-5 text-center border-0">
+            <div className="card shadow-lg p-5 text-center border-0 empty-cart">
               <div className="fs-1 mb-3">📭</div>
-              <p className="text-muted fs-5">Giỏ hàng của bạn đang trống rỗng.</p>
-              <a href="#shop" className="btn btn-warning fw-bold align-self-center px-4">
-                Quay lại cửa hàng
+              <p className="text-muted fs-5 mb-4">Giỏ hàng của bạn đang trống rỗng.</p>
+              <a href="#home" className="btn btn-warning fw-bold px-4 py-2">
+                🛍️ Quay lại cửa hàng
               </a>
             </div>
           ) : (
-            <div className="card shadow-sm p-4 border-0">
-              {cartItems.map((item, index) => (
-                <div key={index} className="d-flex align-items-center justify-content-between border-bottom py-3">
-                  {/* Ảnh và Tên Game */}
-                  <div className="d-flex align-items-center">
-                    <img 
-                      src={item.image} 
-                      alt={item.title} 
-                      className="rounded me-3" 
-                      style={{ width: '80px', height: '50px', objectFit: 'cover' }}
-                    />
-                    <div>
-                      <h6 className="mb-1 fw-bold text-dark">{item.title}</h6>
-                      <small className="text-muted">{item.category}</small>
+            <div className="cart-items-container">
+              <div className="card shadow-lg border-0 overflow-hidden">
+                {cartItems.map((item, index) => (
+                  <div key={index} className="cart-item d-flex align-items-center justify-content-between p-3 border-bottom hover-effect">
+                    {/* Ảnh và Tên Game */}
+                    <div className="d-flex align-items-center flex-grow-1">
+                      <div className="game-image-wrapper me-3">
+                        <img 
+                          src={item.image} 
+                          alt={item.title} 
+                          className="rounded game-thumbnail" 
+                          style={{ width: '100px', height: '60px', objectFit: 'cover' }}
+                          onError={(e) => e.target.src = 'https://via.placeholder.com/100x60?text=No+Image'}
+                        />
+                      </div>
+                      <div className="game-info flex-grow-1">
+                        <h6 className="mb-1 fw-bold text-dark game-title">{item.title}</h6>
+                        <small className="text-muted">{item.category}</small>
+                      </div>
+                    </div>
+
+                    {/* Giá và Nút xóa */}
+                    <div className="d-flex align-items-center gap-3 ms-3">
+                      <span className="text-warning fw-bold price-tag">${item.price.toFixed(2)}</span>
+                      <button 
+                        className="btn btn-sm btn-danger remove-btn" 
+                        onClick={() => removeFromCart(index)}
+                        title="Xóa khỏi giỏ hàng"
+                      >
+                        🗑️
+                      </button>
                     </div>
                   </div>
+                ))}
 
-                  {/* Giá và Nút xóa */}
-                  <div className="d-flex align-items-center">
-                    <span className="text-info fw-bold me-4">${item.price}</span>
-                    <button 
-                      className="btn btn-sm btn-outline-danger" 
-                      onClick={() => removeFromCart(index)} // Xóa món hàng dựa trên vị trí index
-                      title="Xóa khỏi giỏ hàng"
-                    >
-                      🗑️ Xóa
+                {/* Nút xóa sạch giỏ hàng */}
+                {cartItems.length > 0 && (
+                  <div className="p-3 bg-light border-top">
+                    <button className="btn btn-sm btn-link text-danger p-0 text-decoration-none" onClick={clearCart}>
+                      ❌ Xóa toàn bộ giỏ hàng
                     </button>
                   </div>
-                </div>
-              ))}
-
-              {/* Nút xóa sạch giỏ hàng */}
-              <div className="text-start mt-3">
-                <button className="btn btn-sm btn-link text-danger p-0 text-decoration-none" onClick={clearCart}>
-                  ❌ Xóa toàn bộ giỏ hàng
-                </button>
+                )}
               </div>
             </div>
           )}
         </div>
 
-        {/* Cột hiển thị Tổng kết hóa đơn (Bên phải) */}
-        <div className="col-lg-4 mt-4 mt-lg-0">
-          <div className="card shadow-sm p-4 border-0 bg-dark text-white">
-            <h5 className="fw-bold mb-4 text-warning">Tóm tắt đơn hàng</h5>
-            <div className="d-flex justify-content-between mb-3">
-              <span>Số lượng sản phẩm:</span>
-              <span className="fw-bold">{cartItems.length}</span>
-            </div>
-            <div className="d-flex justify-content-between mb-4 border-top pt-3 fs-5">
-              <span className="text-muted">Tổng cộng:</span>
-              <span className="text-warning fw-bold">${totalPayment.toFixed(2)}</span>
-            </div>
+        {/* Cột hiển thị Tóm tắt hóa đơn (Bên phải - Sidebar Style) */}
+        <div className="col-lg-4">
+          <div className="card shadow-lg p-4 border-0 bg-dark text-white sticky-top cart-summary">
+            <h5 className="fw-bold mb-4 text-warning text-uppercase">📊 Tóm tắt đơn hàng</h5>
             
+            {/* Chi tiết giỏ hàng */}
+            <div className="mb-4">
+              <div className="d-flex justify-content-between mb-3 pb-3 border-bottom">
+                <span className="text-white">Số lượng sản phẩm:</span>
+                <span className="fw-bold text-info badge bg-info text-dark">{cartItems.length}</span>
+              </div>
+
+              {/* Hiển thị từng sản phẩm trong giỏ */}
+              {cartItems.length > 0 && (
+                <div className="cart-item-details mb-3 pb-3 border-bottom">
+                  <small className="text-muted d-block mb-2">Chi tiết sản phẩm:</small>
+                  <div className="cart-items-list" style={{ maxHeight: '200px', overflowY: 'auto' }}>
+                    {cartItems.map((item, index) => (
+                      <div key={index} className="d-flex justify-content-between mb-2">
+                        <small className="text-white truncate" style={{ maxWidth: '150px', overflow: 'hidden', textOverflow: 'ellipsis' }}>{item.title}</small>
+                        <small className="text-warning fw-bold">${item.price.toFixed(2)}</small>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Tổng cộng */}
+              <div className="d-flex justify-content-between py-3 border-top border-warning">
+                <span className="text-white fw-bold fs-6">Tổng cộng:</span>
+                <span className="text-warning fw-bold fs-5">${totalPayment.toFixed(2)}</span>
+              </div>
+            </div>
+
+            {/* Nút checkout */}
             <button 
-              className="btn btn-warning w-100 fw-bold py-2 shadow-sm" 
+              className="btn btn-warning w-100 fw-bold py-3 shadow-lg checkout-btn" 
               disabled={cartItems.length === 0}
               onClick={onCheckout}
             >
               💳 TIẾN HÀNH THANH TOÁN
             </button>
+
+            {/* Thông tin hỗ trợ */}
+            {cartItems.length === 0 && (
+              <small className="text-muted text-center d-block mt-3">
+                Thêm game vào giỏ hàng để bắt đầu thanh toán
+              </small>
+            )}
           </div>
         </div>
       </div>

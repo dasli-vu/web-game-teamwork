@@ -8,7 +8,9 @@ import initialGamesData from './component/database.json';
 import Checkout from './component/Checkout';
 import OrderHistory from './component/OrderHistory';
 import Login from './component/Login';
-import AdminLogin from './component/AdminLogin';
+import Feedback from './component/Feedback';
+import PromotionBanner from './component/PromotionBanner';
+import LanguageSwitcher from './component/LanguageSwitcher';
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -19,7 +21,6 @@ function App() {
   const [directPurchaseItems, setDirectPurchaseItems] = useState(null);
   const [showCheckout, setShowCheckout] = useState(false);
   const [showLoginModal, setShowLoginModal] = useState(false);
-  const [showAdminLoginModal, setShowAdminLoginModal] = useState(false);
   const [games, setGames] = useState(initialGamesData);
 
   // Kiểm tra user đã login hay chưa khi component load
@@ -112,15 +113,16 @@ function App() {
     <div className="bg-light min-vh-100">
       {/* Menu navbar */}
       <Menu 
-        cartCount={cart.length} 
+        cartCount={cart.length}
+        cartItems={cart}
         currentUser={currentUser}
         isLoggedIn={isLoggedIn}
         isAdminLoggedIn={isAdminLoggedIn}
         onLogout={handleLogout}
         onAdminLogout={handleAdminLogout}
         onLoginClick={() => setShowLoginModal(true)}
-        onAdminLoginClick={() => setShowAdminLoginModal(true)}
         onNavigate={setCurrentPage}
+        onCheckout={() => setShowCheckout(true)}
       />
       
       {/* Login Modal */}
@@ -128,18 +130,15 @@ function App() {
         show={showLoginModal}
         onHide={() => setShowLoginModal(false)}
         onLoginSuccess={handleLoginSuccess}
-      />
-
-      {/* Admin Login Modal */}
-      <AdminLogin
-        show={showAdminLoginModal}
-        onHide={() => setShowAdminLoginModal(false)}
-        onLoginSuccess={handleAdminLoginSuccess}
+        onAdminLoginSuccess={handleAdminLoginSuccess}
       />
       
       {/* Hiển thị trang dựa vào currentPage */}
       {currentPage === 'home' && (
         <>
+          {/* Promotion Banner */}
+          <PromotionBanner />
+          
           {/* Hiển thị trang chủ danh sách sản phẩm */}
           <Home gamesData={games} addToCart={addToCart} onBuyNow={handleBuyNow} />
           
@@ -152,6 +151,9 @@ function App() {
             clearCart={clearCart}
             onCheckout={() => setShowCheckout(true)}
           />
+
+          {/* Feedback Section */}
+          <Feedback />
         </>
       )}
 
