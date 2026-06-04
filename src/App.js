@@ -113,7 +113,8 @@ function App() {
     <div className="bg-light min-vh-100">
       {/* Menu navbar */}
       <Menu 
-        cartCount={cart.length} 
+        cartCount={cart.length}
+        cartItems={cart}
         currentUser={currentUser}
         isLoggedIn={isLoggedIn}
         isAdminLoggedIn={isAdminLoggedIn}
@@ -121,6 +122,7 @@ function App() {
         onAdminLogout={handleAdminLogout}
         onLoginClick={() => setShowLoginModal(true)}
         onNavigate={setCurrentPage}
+        onCheckout={() => setShowCheckout(true)}
       />
       
       {/* Login Modal */}

@@ -1,0 +1,229 @@
+/* Cart Component Styling */
+
+.cart-items-container {
+  animation: slideIn 0.3s ease-in-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.cart-item {
+  transition: all 0.2s ease;
+  background-color: #fff;
+}
+
+.cart-item:hover {
+  background-color: #f8f9fa;
+  border-left: 4px solid #ffc107 !important;
+}
+
+.game-image-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.game-thumbnail {
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.game-thumbnail:hover {
+  transform: scale(1.05);
+}
+
+.game-title {
+  color: #212529;
+  transition: color 0.2s ease;
+}
+
+.cart-item:hover .game-title {
+  color: #ffc107;
+}
+
+.price-tag {
+  font-size: 1.1rem;
+  min-width: 80px;
+  text-align: right;
+}
+
+.remove-btn {
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.remove-btn:hover {
+  transform: scale(1.1);
+  background-color: #dc3545 !important;
+  border-color: #dc3545 !important;
+}
+
+/* Cart Summary Sidebar */
+.cart-summary {
+  border-radius: 12px;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%) !important;
+  top: 20px;
+  transition: box-shadow 0.3s ease;
+}
+
+.cart-summary:hover {
+  box-shadow: 0 8px 24px rgba(255, 193, 7, 0.15) !important;
+}
+
+.bg-gradient-dark {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+}
+
+.cart-summary .border-bottom,
+.cart-summary .border-top {
+  border-color: rgba(255, 193, 7, 0.2) !important;
+}
+
+.cart-summary .border-warning {
+  border-color: #ffc107 !important;
+}
+
+.cart-item-details {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.cart-items-list {
+  padding-right: 8px;
+}
+
+.cart-items-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.cart-items-list::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+}
+
+.cart-items-list::-webkit-scrollbar-thumb {
+  background: #ffc107;
+  border-radius: 10px;
+}
+
+.cart-items-list::-webkit-scrollbar-thumb:hover {
+  background: #ffb300;
+}
+
+.checkout-btn {
+  background-color: #ffc107 !important;
+  border-color: #ffc107 !important;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.checkout-btn:hover:not(:disabled) {
+  background-color: #ffb300 !important;
+  border-color: #ffb300 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(255, 193, 7, 0.3) !important;
+}
+
+.checkout-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.empty-cart {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  transition: all 0.3s ease;
+}
+
+.empty-cart:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Responsive Design */
+@media (max-width: 991.98px) {
+  .cart-summary {
+    top: 0 !important;
+    margin-top: 20px;
+  }
+
+  .cart-item {
+    flex-wrap: wrap;
+  }
+
+  .game-image-wrapper {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+
+  .game-thumbnail {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .price-tag {
+    width: 100%;
+    text-align: left;
+    margin-top: 12px;
+  }
+
+  .remove-btn {
+    margin-left: auto;
+  }
+}
+
+/* Animation for adding items */
+@keyframes itemAdded {
+  0% {
+    background-color: rgba(255, 193, 7, 0.2);
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+.cart-item.added {
+  animation: itemAdded 0.5s ease-in-out;
+}
+
+/* Truncate text for long titles */
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Smooth transitions */
+.card {
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Badge styling */
+.badge {
+  font-size: 0.9rem;
+  padding: 0.5rem 0.75rem;
+  font-weight: 600;
+  animation: badgePulse 0.5s ease;
+}
+
+@keyframes badgePulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
