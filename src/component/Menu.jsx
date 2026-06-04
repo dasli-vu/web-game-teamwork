@@ -40,6 +40,17 @@ function Menu({ cartCount, cartItems = [], currentUser, isLoggedIn, isAdminLogge
                 </a>
               </li>
             )}
+            {!isAdminLoggedIn && (
+              <li className="nav-item">
+                <a 
+                  className="nav-link" 
+                  href="#cart"
+                  onClick={() => onNavigate('cart')}
+                >
+                  🛒 Giỏ Hàng Chi Tiết
+                </a>
+              </li>
+            )}
             {isAdminLoggedIn && (
               <li className="nav-item">
                 <a 
@@ -128,12 +139,12 @@ function Menu({ cartCount, cartItems = [], currentUser, isLoggedIn, isAdminLogge
                           <span className="text-warning fw-bold fs-6">${totalPayment.toFixed(2)}</span>
                         </div>
                         
-                        {/* Nút Checkout */}
-                        <button 
-                          className="btn btn-warning w-100 fw-bold py-2"
-                          onClick={() => {
-                            onNavigate('home');
-                            setShowCartDropdown(false);
+                         {/* Nút Xem Giỏ Hàng */}
+                         <button 
+                           className="btn btn-warning w-100 fw-bold py-2"
+                           onClick={() => {
+                             onNavigate('cart');
+                             setShowCartDropdown(false);
                           }}
                         >
                           🛒 Xem Giỏ Hàng

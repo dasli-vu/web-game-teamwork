@@ -1,632 +1,632 @@
 [
     {
-        "id": 1,
-        "description": "Trò chơi hành động nhập vai dựa trên tiểu thuyết Tây Du Ký.",
-        "details": {
-            "features": [
-                "Hệ thống chiến đấu phức tạp",
-                "Thế giới mở rộng lớn",
-                "Câu chuyện dựa trên tiểu thuyết",
-                "Đồ họa tuyệt đẹp"
-            ],
-            "developer": "Game Science",
-            "releaseDate": "2024",
-            "platform": "PC, PS5, Xbox Series X|S",
-            "rating": "9.2/10",
-            "fullDescription": "Black Myth: Wukong là một tựa game hành động nhập vai xuất sắc."
-        },
-        "price": 59.99,
-        "category": "Action RPG",
-        "title": "Black Myth: Wukong",
-        "image": "https://images.rawgcdn.com/games/456991/ysmtm4qz23zkoledf0af.jpg"
+        "id":  1,
+        "description":  "Trò chơi hành động nhập vai dựa trên tiểu thuyết Tây Du Ký.",
+        "details":  {
+                        "features":  [
+                                         "Hệ thống chiến đấu phức tạp",
+                                         "Thế giới mở rộng lớn",
+                                         "Câu chuyện dựa trên tiểu thuyết",
+                                         "Đồ họa tuyệt đẹp"
+                                     ],
+                        "developer":  "Game Science",
+                        "releaseDate":  "2024",
+                        "platform":  "PC, PS5, Xbox Series X|S",
+                        "rating":  "9.2/10",
+                        "fullDescription":  "Black Myth: Wukong là một tựa game hành động nhập vai xuất sắc."
+                    },
+        "price":  59.99,
+        "category":  "Action RPG",
+        "title":  "Black Myth: Wukong",
+        "image":  "https://steamcdn-a.akamaihd.net/steam/apps/2358720/capsule_616x353.jpg"
     },
     {
-        "id": 2,
-        "description": "Khám phá thành phố tương lai Night City đầy rẫy tội phạm.",
-        "details": {
-            "features": [
-                "Hệ thống lựa chọn chi tiết",
-                "Thành phố mở rộng lớn",
-                "Nhân vật tùy chỉnh",
-                "Cốt truyện sâu sắc"
-            ],
-            "developer": "CD Projekt Red",
-            "releaseDate": "2020",
-            "platform": "PC, PS5, Xbox",
-            "rating": "8.5/10",
-            "fullDescription": "Cyberpunk 2077 - Khám phá thế giới mở tương lai."
-        },
-        "price": 39.99,
-        "category": "Sci-Fi / Open World",
-        "title": "Cyberpunk 2077",
-        "image": "https://images.rawgcdn.com/games/11481/ypkwrdfrvknzfg7kyazw.jpg"
+        "id":  2,
+        "description":  "Khám phá thành phố tương lai Night City đầy rẫy tội phạm.",
+        "details":  {
+                        "features":  [
+                                         "Hệ thống lựa chọn chi tiết",
+                                         "Thành phố mở rộng lớn",
+                                         "Nhân vật tùy chỉnh",
+                                         "Cốt truyện sâu sắc"
+                                     ],
+                        "developer":  "CD Projekt Red",
+                        "releaseDate":  "2020",
+                        "platform":  "PC, PS5, Xbox",
+                        "rating":  "8.5/10",
+                        "fullDescription":  "Cyberpunk 2077 - Khám phá thế giới mở tương lai."
+                    },
+        "price":  39.99,
+        "category":  "Sci-Fi / Open World",
+        "title":  "Cyberpunk 2077",
+        "image":  "https://steamcdn-a.akamaihd.net/steam/apps/1091500/capsule_616x353.jpg"
     },
     {
-        "id": 3,
-        "description": "Hành trình trở thành Elden Lord trong thế giới mở rộng lớn.",
-        "details": {
-            "features": [
-                "Thế giới mở rộng",
-                "Hệ thống chiến đấu đầy thách thức",
-                "Câu chuyện sâu sắc",
-                "Multiplayer"
-            ],
-            "developer": "FromSoftware",
-            "releaseDate": "2022",
-            "platform": "PC, PS4/5, Xbox",
-            "rating": "9.5/10",
-            "fullDescription": "Elden Ring - Tác phẩm kinh điển từ FromSoftware."
-        },
-        "price": 49.99,
-        "category": "Souls-like",
-        "title": "Elden Ring",
-        "image": "https://images.rawgcdn.com/games/582365/wnnmhoxp8ql6vdda68kv.jpg"
+        "id":  3,
+        "description":  "Hành trình trở thành Elden Lord trong thế giới mở rộng lớn.",
+        "details":  {
+                        "features":  [
+                                         "Thế giới mở rộng",
+                                         "Hệ thống chiến đấu đầy thách thức",
+                                         "Câu chuyện sâu sắc",
+                                         "Multiplayer"
+                                     ],
+                        "developer":  "FromSoftware",
+                        "releaseDate":  "2022",
+                        "platform":  "PC, PS4/5, Xbox",
+                        "rating":  "9.5/10",
+                        "fullDescription":  "Elden Ring - Tác phẩm kinh điển từ FromSoftware."
+                    },
+        "price":  49.99,
+        "category":  "Souls-like",
+        "title":  "Elden Ring",
+        "image":  "https://steamcdn-a.akamaihd.net/steam/apps/2778580/capsule_616x353.jpg"
     },
     {
-        "id": 4,
-        "description": "Game bắn súng chiến thuật huyền thoại 5v5.",
-        "details": {
-            "features": [
-                "Gameplay tốc độ cao",
-                "Đồ họa sắc nét",
-                "Esports hỗ trợ",
-                "Nội dung phong phú"
-            ],
-            "developer": "Riot Games",
-            "releaseDate": "2020",
-            "platform": "PC, PlayStation, Xbox",
-            "rating": "8.8/10",
-            "fullDescription": "Valorant - Trò chơi bắn súng chiến thuật tuyệt vời."
-        },
-        "price": 29.99,
-        "category": "Shooter",
-        "title": "Valorant",
-        "image": "https://images.rawgcdn.com/games/458543/fnkdmjlpqy6b2eqs6awl.jpg"
+        "id":  4,
+        "description":  "Game bắn súng chiến thuật huyền thoại 5v5.",
+        "details":  {
+                        "features":  [
+                                         "Gameplay tốc độ cao",
+                                         "Đồ họa sắc nét",
+                                         "Esports hỗ trợ",
+                                         "Nội dung phong phú"
+                                     ],
+                        "developer":  "Riot Games",
+                        "releaseDate":  "2020",
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "8.8/10",
+                        "fullDescription":  "Valorant - Trò chơi bắn súng chiến thuật tuyệt vời."
+                    },
+        "price":  29.99,
+        "category":  "Shooter",
+        "title":  "Valorant",
+        "image":  "https://mediaproxy.tvtropes.org/width/1200/https://static.tvtropes.org/pmwiki/pub/images/valo2.png"
     },
     {
-        "id": 5,
-        "description": "Game đua xe mô phỏng thực tế từ Turn 10.",
-        "details": {
-            "features": [
-                "Đồ họa siêu thực",
-                "Xe có thật",
-                "Đường đua toàn cầu",
-                "Multiplayer online"
-            ],
-            "developer": "Turn 10 Studios",
-            "releaseDate": "2023",
-            "platform": "PC, PlayStation, Xbox",
-            "rating": "9.2/10",
-            "fullDescription": "Forza Motorsport 8 - Game đua xe đẳng cấp thế giới."
-        },
-        "price": 59.99,
-        "category": "Racing",
-        "title": "Forza Motorsport 8",
-        "image": "https://images.rawgcdn.com/games/517277/xqkwp38xekwfrvvxwcxm.jpg"
+        "id":  5,
+        "description":  "Game đua xe mô phỏng thực tế từ Turn 10.",
+        "details":  {
+                        "features":  [
+                                         "Đồ họa siêu thực",
+                                         "Xe có thật",
+                                         "Đường đua toàn cầu",
+                                         "Multiplayer online"
+                                     ],
+                        "developer":  "Turn 10 Studios",
+                        "releaseDate":  "2023",
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "9.2/10",
+                        "fullDescription":  "Forza Motorsport 8 - Game đua xe đẳng cấp thế giới."
+                    },
+        "price":  59.99,
+        "category":  "Racing",
+        "title":  "Forza Motorsport 8",
+        "image":  "https://steamcdn-a.akamaihd.net/steam/apps/1293830/capsule_616x353.jpg"
     },
     {
-        "id": 6,
-        "description": "Game thể thao bóng đá hàng năm.",
-        "details": {
-            "features": [
-                "Đội bóng thực tế",
-                "Chế độ quản lý",
-                "Ultimate Team",
-                "Multiplayer phong phú"
-            ],
-            "developer": "EA Sports",
-            "releaseDate": "2024",
-            "platform": "PC, PlayStation, Xbox",
-            "rating": "7.5/10",
-            "fullDescription": "FC 25 - Game bóng đá được yêu thích nhất thế giới."
-        },
-        "price": 69.99,
-        "category": "Sports",
-        "title": "FC 25",
-        "image": "https://images.rawgcdn.com/games/521125/p9pzzxsmlxcq6djqwfaw.jpg"
+        "id":  6,
+        "description":  "Game thể thao bóng đá hàng năm.",
+        "details":  {
+                        "features":  [
+                                         "Đội bóng thực tế",
+                                         "Chế độ quản lý",
+                                         "Ultimate Team",
+                                         "Multiplayer phong phú"
+                                     ],
+                        "developer":  "EA Sports",
+                        "releaseDate":  "2024",
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "7.5/10",
+                        "fullDescription":  "FC 25 - Game bóng đá được yêu thích nhất thế giới."
+                    },
+        "price":  69.99,
+        "category":  "Sports",
+        "title":  "FC 25",
+        "image":  "https://scontent.fhan18-1.fna.fbcdn.net/v/t1.15752-9/715411897_1306072641127689_6713485276839192840_n.png?stp=dst-png_p394x394&_nc_cat=110&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeFCgShK4F_fhD9-Bo_E-Ie6EEgoLfBResoQSCgt8FF6yrpyQhzBBz4gW7kph79nL4vx_EjfIRPYZGsGYcMhRV1s&_nc_ohc=mY0VLjGSo5UQ7kNvwFRdu5u&_nc_oc=Adr96LiMmRp3x1qaIJ4PuD07Io6o3wWRjrruwYX2X966pctIm8J_L4cq1TKK_XcogAY&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fhan18-1.fna&_nc_ss=7a22e&oh=03_Q7cD5gFyI8uX0Z48Y4qUSoYR00BBBIJ8Xj8KCn_ZQquW8VCagA&oe=6A48FE83"
     },
     {
-        "id": 7,
-        "description": "Game kinh dị với câu chuyện rùng rợn.",
-        "details": {
-            "features": [
-                "Athmosphere đáng sợ",
-                "Câu chuyện sâu sắc",
-                "Gameplay căng thẳng",
-                "Đồ họa ấn tượng"
-            ],
-            "developer": "Bloober Team",
-            "releaseDate": "2023",
-            "platform": "PC, PlayStation, Xbox",
-            "rating": "7.6/10",
-            "fullDescription": "Silent Hill 2 Remake - Tác phẩm kinh dị kinh điển."
-        },
-        "price": 69.99,
-        "category": "Horror",
-        "title": "Silent Hill 2 Remake",
-        "image": "https://images.rawgcdn.com/games/1051217/i3b0kdpxd0nbdbt1ycys.jpg"
+        "id":  7,
+        "description":  "Game kinh dị với câu chuyện rùng rợn.",
+        "details":  {
+                        "features":  [
+                                         "Athmosphere đáng sợ",
+                                         "Câu chuyện sâu sắc",
+                                         "Gameplay căng thẳng",
+                                         "Đồ họa ấn tượng"
+                                     ],
+                        "developer":  "Bloober Team",
+                        "releaseDate":  "2023",
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "7.6/10",
+                        "fullDescription":  "Silent Hill 2 Remake - Tác phẩm kinh dị kinh điển."
+                    },
+        "price":  69.99,
+        "category":  "Horror",
+        "title":  "Silent Hill 2 Remake",
+        "image":  "https://cdn-media.sforum.vn/storage/app/media/phuonganh/silent-hill-2-remake-1(1).jpg"
     },
     {
-        "id": 8,
-        "description": "Game phiêu lưu từ Obsidian Entertainment.",
-        "details": {
-            "features": [
-                "Thế giới mở lớn",
-                "Câu chuyện sâu sắc",
-                "Gameplay tự do",
-                "Đồ họa đẹp"
-            ],
-            "developer": "Obsidian Entertainment",
-            "releaseDate": "2023",
-            "platform": "PC, PlayStation, Xbox",
-            "rating": "8.7/10",
-            "fullDescription": "Starfield - Phiêu lưu trong không gian vô tận."
-        },
-        "price": 59.99,
-        "category": "Adventure",
-        "title": "Starfield",
-        "image": "https://images.rawgcdn.com/games/440963/kswz98v8rqqqg9u0qsek.jpg"
+        "id":  8,
+        "description":  "Game phiêu lưu từ Obsidian Entertainment.",
+        "details":  {
+                        "features":  [
+                                         "Thế giới mở lớn",
+                                         "Câu chuyện sâu sắc",
+                                         "Gameplay tự do",
+                                         "Đồ họa đẹp"
+                                     ],
+                        "developer":  "Obsidian Entertainment",
+                        "releaseDate":  "2023",
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "8.7/10",
+                        "fullDescription":  "Starfield - Phiêu lưu trong không gian vô tận."
+                    },
+        "price":  59.99,
+        "category":  "Adventure",
+        "title":  "Starfield",
+        "image":  "https://steamcdn-a.akamaihd.net/steam/apps/1716740/capsule_616x353.jpg"
     },
     {
-        "id": 9,
-        "description": "Game Puzzle hấp dẫn với câu đố sáng tạo.",
-        "details": {
-            "features": [
-                "Câu đố sáng tạo",
-                "Đồ họa tuyệt đẹp",
-                "Âm thanh tuyệt vời",
-                "Gameplay lôi cuốn"
-            ],
-            "developer": "Mobius Digital",
-            "releaseDate": "2021",
-            "platform": "PC, PlayStation, Xbox",
-            "rating": "8.9/10",
-            "fullDescription": "The Outer Wilds - Khám phá hành tinh bí ẩn."
-        },
-        "price": 24.99,
-        "category": "Puzzle",
-        "title": "The Outer Wilds",
-        "image": "https://images.rawgcdn.com/games/318745/a7d2e9q2t8k3m1b5c9p8.jpg"
+        "id":  9,
+        "description":  "Game Puzzle hấp dẫn với câu đố sáng tạo.",
+        "details":  {
+                        "features":  [
+                                         "Câu đố sáng tạo",
+                                         "Đồ họa tuyệt đẹp",
+                                         "Âm thanh tuyệt vời",
+                                         "Gameplay lôi cuốn"
+                                     ],
+                        "developer":  "Mobius Digital",
+                        "releaseDate":  "2021",
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "8.9/10",
+                        "fullDescription":  "The Outer Wilds - Khám phá hành tinh bí ẩn."
+                    },
+        "price":  24.99,
+        "category":  "Puzzle",
+        "title":  "The Outer Wilds",
+        "image":  "https://steamcdn-a.akamaihd.net/steam/apps/271570/capsule_616x353.jpg"
     },
     {
-        "id": 10,
-        "description": "Game casual vui nhộn cho mọi lứa tuổi.",
-        "details": {
-            "features": [
-                "Gameplay dễ học",
-                "Đồ họa sáng tạo",
-                "Multiplayer vui nhộn",
-                "Nội dung phong phú"
-            ],
-            "developer": "Nintendo",
-            "releaseDate": "2021",
-            "platform": "PC, PlayStation, Xbox",
-            "rating": "8.2/10",
-            "fullDescription": "Animal Crossing - Xây dựng ngôi làng mơ ước."
-        },
-        "price": 34.99,
-        "category": "Casual",
-        "title": "Animal Crossing",
-        "image": "https://images.rawgcdn.com/games/332283/f8k2m5p1q7r9t3x8y2w6.jpg"
+        "id":  10,
+        "description":  "Game casual vui nhộn cho mọi lứa tuổi.",
+        "details":  {
+                        "features":  [
+                                         "Gameplay dễ học",
+                                         "Đồ họa sáng tạo",
+                                         "Multiplayer vui nhộn",
+                                         "Nội dung phong phú"
+                                     ],
+                        "developer":  "Nintendo",
+                        "releaseDate":  "2021",
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "8.2/10",
+                        "fullDescription":  "Animal Crossing - Xây dựng ngôi làng mơ ước."
+                    },
+        "price":  34.99,
+        "category":  "Casual",
+        "title":  "Animal Crossing",
+        "image":  "https://images.igdb.com/igdb/image/upload/t_cover_big/co2ecc.jpg"
     },
     {
-        "id": 11,
-        "description": "Game MMO online phối hợp đội nhóm.",
-        "details": {
-            "features": [
-                "Quests phong phú",
-                "Raids đầy thách thức",
-                "Community lớn",
-                "Nội dung liên tục"
-            ],
-            "developer": "Blizzard Entertainment",
-            "releaseDate": "2004",
-            "platform": "PC, PlayStation, Xbox",
-            "rating": "8.1/10",
-            "fullDescription": "World of Warcraft - Huyền thoại MMO."
-        },
-        "price": 49.99,
-        "category": "MMO",
-        "title": "World of Warcraft",
-        "image": "https://images.rawgcdn.com/games/5286/f7q3m9k2p5r1t8x4y6z1.jpg"
+        "id":  11,
+        "description":  "Game MMO online phối hợp đội nhóm.",
+        "details":  {
+                        "features":  [
+                                         "Quests phong phú",
+                                         "Raids đầy thách thức",
+                                         "Community lớn",
+                                         "Nội dung liên tục"
+                                     ],
+                        "developer":  "Blizzard Entertainment",
+                        "releaseDate":  "2004",
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "8.1/10",
+                        "fullDescription":  "World of Warcraft - Huyền thoại MMO."
+                    },
+        "price":  49.99,
+        "category":  "MMO",
+        "title":  "World of Warcraft",
+        "image":  "https://cdn2.fptshop.com.vn/unsafe/1920x0/filters:format(webp):quality(75)/2023_12_24_638390056731281084_world-of-warcraft-thumb.jpg"
     },
     {
-        "id": 12,
-        "description": "Game đánh nhau với gameplay sắc nét.",
-        "details": {
-            "features": [
-                "Nhân vật đa dạng",
-                "Combo phức tạp",
-                "Esports support",
-                "Đồ họa đẹp"
-            ],
-            "developer": "Capcom",
-            "releaseDate": "2023",
-            "platform": "PC, PlayStation, Xbox",
-            "rating": "8.4/10",
-            "fullDescription": "Street Fighter 6 - Huyền thoại game đánh nhau."
-        },
-        "price": 39.99,
-        "category": "Fighting",
-        "title": "Street Fighter 6",
-        "image": "https://images.rawgcdn.com/games/477246/k8p2m5r1q9t3x7y2w4z6.jpg"
+        "id":  12,
+        "description":  "Game đánh nhau với gameplay sắc nét.",
+        "details":  {
+                        "features":  [
+                                         "Nhân vật đa dạng",
+                                         "Combo phức tạp",
+                                         "Esports support",
+                                         "Đồ họa đẹp"
+                                     ],
+                        "developer":  "Capcom",
+                        "releaseDate":  "2023",
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "8.4/10",
+                        "fullDescription":  "Street Fighter 6 - Huyền thoại game đánh nhau."
+                    },
+        "price":  39.99,
+        "category":  "Fighting",
+        "title":  "Street Fighter 6",
+        "image":  "https://steamcdn-a.akamaihd.net/steam/apps/1364780/capsule_616x353.jpg"
     },
     {
-        "id": 13,
-        "description": "Game hành động RPG từ Santa Monica Studio.",
-        "details": {
-            "features": [
-                "Gameplay mạnh mẽ",
-                "Câu chuyện tuyệt vời",
-                "Thế giới mở đẹp",
-                "Chiến đấu dữ dội"
-            ],
-            "developer": "Santa Monica Studio",
-            "releaseDate": "2022",
-            "platform": "PC, PlayStation, Xbox",
-            "rating": "9.1/10",
-            "fullDescription": "God of War - Hành trình của một vị thần."
-        },
-        "price": 49.99,
-        "category": "Action RPG",
-        "title": "God of War",
-        "image": "https://images.rawgcdn.com/games/456447/z5m3k1p7q2r9t4x8y1w5.jpg"
+        "id":  13,
+        "description":  "Game hành động RPG từ Santa Monica Studio.",
+        "details":  {
+                        "features":  [
+                                         "Gameplay mạnh mẽ",
+                                         "Câu chuyện tuyệt vời",
+                                         "Thế giới mở đẹp",
+                                         "Chiến đấu dữ dội"
+                                     ],
+                        "developer":  "Santa Monica Studio",
+                        "releaseDate":  "2022",
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "9.1/10",
+                        "fullDescription":  "God of War - Hành trình của một vị thần."
+                    },
+        "price":  49.99,
+        "category":  "Action RPG",
+        "title":  "God of War",
+        "image":  "https://steamcdn-a.akamaihd.net/steam/apps/310950/capsule_616x353.jpg"
     },
     {
-        "id": 14,
-        "description": "Game Sci-Fi RPG từ CD Projekt Red.",
-        "details": {
-            "features": [
-                "Thế giới sci-fi kỳ diệu",
-                "Nhân vật phong phú",
-                "Quests phức tạp",
-                "Cốt truyện sâu sắc"
-            ],
-            "developer": "CD Projekt Red",
-            "releaseDate": "2015",
-            "platform": "PC, PlayStation, Xbox",
-            "rating": "9.3/10",
-            "fullDescription": "The Witcher 3 - Tìm kiếm người yêu."
-        },
-        "price": 29.99,
-        "category": "Sci-Fi RPG",
-        "title": "The Witcher 3",
-        "image": "https://images.rawgcdn.com/games/3328/m4k8p2r5q1t9x3y7w2z6.jpg"
+        "id":  14,
+        "description":  "Game Sci-Fi RPG từ CD Projekt Red.",
+        "details":  {
+                        "features":  [
+                                         "Thế giới sci-fi kỳ diệu",
+                                         "Nhân vật phong phú",
+                                         "Quests phức tạp",
+                                         "Cốt truyện sâu sắc"
+                                     ],
+                        "developer":  "CD Projekt Red",
+                        "releaseDate":  "2015",
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "9.3/10",
+                        "fullDescription":  "The Witcher 3 - Tìm kiếm người yêu."
+                    },
+        "price":  29.99,
+        "category":  "Sci-Fi RPG",
+        "title":  "The Witcher 3",
+        "image":  "https://steamcdn-a.akamaihd.net/steam/apps/292030/capsule_616x353.jpg"
     },
     {
-        "id": 15,
-        "description": "Game chiến lược từ Blizzard.",
-        "details": {
-            "features": [
-                "Gameplay chiến lược",
-                "Multiplayer cạnh tranh",
-                "Esports phát triển",
-                "Cân bằng tốt"
-            ],
-            "developer": "Blizzard Entertainment",
-            "releaseDate": "2010",
-            "platform": "PC, PlayStation, Xbox",
-            "rating": "8.6/10",
-            "fullDescription": "StarCraft II - Huyền thoại RTS."
-        },
-        "price": 29.99,
-        "category": "Strategy",
-        "title": "StarCraft II",
-        "image": "https://images.rawgcdn.com/games/3643/n2k5m8p1r7q4t9x3y6w8.jpg"
+        "id":  15,
+        "description":  "Game chiến lược từ Blizzard.",
+        "details":  {
+                        "features":  [
+                                         "Gameplay chiến lược",
+                                         "Multiplayer cạnh tranh",
+                                         "Esports phát triển",
+                                         "Cân bằng tốt"
+                                     ],
+                        "developer":  "Blizzard Entertainment",
+                        "releaseDate":  "2010",
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "8.6/10",
+                        "fullDescription":  "StarCraft II - Huyền thoại RTS."
+                    },
+        "price":  29.99,
+        "category":  "Strategy",
+        "title":  "StarCraft II",
+        "image":  "https://steamcdn-a.akamaihd.net/steam/apps/646570/capsule_616x353.jpg"
     },
     {
-        "id": 16,
-        "description": "Game bắn súng từ Infinity Ward.",
-        "details": {
-            "features": [
-                "Multiplayer nhanh",
-                "Campaign sâu sắc",
-                "Zombies mode",
-                "Đồ họa tuyệt đẹp"
-            ],
-            "developer": "Infinity Ward",
-            "releaseDate": "2023",
-            "platform": "PC, PlayStation, Xbox",
-            "rating": "8.3/10",
-            "fullDescription": "Call of Duty - Modern Warfare III."
-        },
-        "price": 69.99,
-        "category": "Shooter",
-        "title": "Call of Duty: MW3",
-        "image": "https://images.rawgcdn.com/games/491405/r9t2k1p5m8q3x7y4w6z2.jpg"
+        "id":  16,
+        "description":  "Game bắn súng từ Infinity Ward.",
+        "details":  {
+                        "features":  [
+                                         "Multiplayer nhanh",
+                                         "Campaign sâu sắc",
+                                         "Zombies mode",
+                                         "Đồ họa tuyệt đẹp"
+                                     ],
+                        "developer":  "Infinity Ward",
+                        "releaseDate":  "2023",
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "8.3/10",
+                        "fullDescription":  "Call of Duty - Modern Warfare III."
+                    },
+        "price":  69.99,
+        "category":  "Shooter",
+        "title":  "Call of Duty: MW3",
+        "image":  "https://steamcdn-a.akamaihd.net/steam/apps/2149690/capsule_616x353.jpg"
     },
     {
-        "id": 17,
-        "description": "Game đua xe arcade vui nhộn.",
-        "details": {
-            "features": [
-                "Track đa dạng",
-                "Xe customize",
-                "Gameplay arcade",
-                "Multiplayer online"
-            ],
-            "developer": "Playground Games",
-            "releaseDate": "2023",
-            "platform": "PC, PlayStation, Xbox",
-            "rating": "8.8/10",
-            "fullDescription": "Forza Horizon 5 - Phiêu lưu tại Mexico."
-        },
-        "price": 59.99,
-        "category": "Racing",
-        "title": "Forza Horizon 5",
-        "image": "https://images.rawgcdn.com/games/460331/t4m7k2p9r1q6x8y3w5z7.jpg"
+        "id":  17,
+        "description":  "Game đua xe arcade vui nhộn.",
+        "details":  {
+                        "features":  [
+                                         "Track đa dạng",
+                                         "Xe customize",
+                                         "Gameplay arcade",
+                                         "Multiplayer online"
+                                     ],
+                        "developer":  "Playground Games",
+                        "releaseDate":  "2023",
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "8.8/10",
+                        "fullDescription":  "Forza Horizon 5 - Phiêu lưu tại Mexico."
+                    },
+        "price":  59.99,
+        "category":  "Racing",
+        "title":  "Forza Horizon 5",
+        "image":  "https://image.api.playstation.com/vulcan/ap/rnd/202501/2717/42b3ee6b1b2094212231b0b0a82824f687fc5c4dc9bde31c.png"
     },
     {
-        "id": 18,
-        "description": "Game bóng rổ từ 2K Sports.",
-        "details": {
-            "features": [
-                "NBA players thực",
-                "Chế độ quản lý",
-                "Online multiplayer",
-                "Đồ họa chân thực"
-            ],
-            "developer": "2K Sports",
-            "releaseDate": "2023",
-            "platform": "PC, PlayStation, Xbox",
-            "rating": "7.8/10",
-            "fullDescription": "NBA 2K24 - Basketball tại đỉnh cao."
-        },
-        "price": 69.99,
-        "category": "Sports",
-        "title": "NBA 2K24",
-        "image": "https://images.rawgcdn.com/games/493430/p8r2k4m1q7t9x5y3w6z8.jpg"
+        "id":  18,
+        "description":  "Game bóng rổ từ 2K Sports.",
+        "details":  {
+                        "features":  [
+                                         "NBA players thực",
+                                         "Chế độ quản lý",
+                                         "Online multiplayer",
+                                         "Đồ họa chân thực"
+                                     ],
+                        "developer":  "2K Sports",
+                        "releaseDate":  "2023",
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "7.8/10",
+                        "fullDescription":  "NBA 2K24 - Basketball tại đỉnh cao."
+                    },
+        "price":  69.99,
+        "category":  "Sports",
+        "title":  "NBA 2K24",
+        "image":  "https://cdn.cloudflare.steamstatic.com/steam/apps/2407560/capsule_616x353.jpg"
     },
     {
-        "id": 19,
-        "description": "Game kinh dị sinh tồn.",
-        "details": {
-            "features": [
-                "Atmosphere kinh dị",
-                "Puzzle phức tạp",
-                "Sinh tồn khó khăn",
-                "Cốt truyện sâu"
-            ],
-            "developer": "Capcom",
-            "releaseDate": "2023",
-            "platform": "PC, PlayStation, Xbox",
-            "rating": "8.5/10",
-            "fullDescription": "Resident Evil 4 - Tái tạo kinh điển."
-        },
-        "price": 59.99,
-        "category": "Horror",
-        "title": "Resident Evil 4 Remake",
-        "image": "https://images.rawgcdn.com/games/493430/q5t8m2r7k1p9x4y6w3z5.jpg"
+        "id":  19,
+        "description":  "Game kinh dí sinh tồn.",
+        "details":  {
+                        "features":  [
+                                         "Atmosphere kinh dị",
+                                         "Puzzle phức tạp",
+                                         "Sinh tồn khó khăn",
+                                         "Cốt truyện sâu"
+                                     ],
+                        "developer":  "Capcom",
+                        "releaseDate":  "2023",
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "8.5/10",
+                        "fullDescription":  "Resident Evil 4 - Tái tạo kinh điển."
+                    },
+        "price":  59.99,
+        "category":  "Horror",
+        "title":  "Resident Evil 4 Remake",
+        "image":  "https://cdn-media.sforum.vn/storage/app/media/wp-content/uploads/2023/12/Resident-Evil-4-1-1.jpg"
     },
     {
-        "id": 20,
-        "description": "Game phiêu lưu fantasy từ Square Enix.",
-        "details": {
-            "features": [
-                "Combat real-time",
-                "Nhân vật tuyệt vời",
-                "Quests phong phú",
-                "Đồ họa tuyệt đẹp"
-            ],
-            "developer": "Square Enix",
-            "releaseDate": "2023",
-            "platform": "PC, PlayStation, Xbox",
-            "rating": "8.9/10",
-            "fullDescription": "Final Fantasy XVI - Huyền thoại tiếp nối."
-        },
-        "price": 69.99,
-        "category": "Adventure",
-        "title": "Final Fantasy XVI",
-        "image": "https://images.rawgcdn.com/games/461240/k3m6p1r8t2q5x9y4w7z1.jpg"
+        "id":  20,
+        "description":  "Game phiêu lưu fantasy từ Square Enix.",
+        "details":  {
+                        "features":  [
+                                         "Combat real-time",
+                                         "Nhân vật tuyệt vời",
+                                         "Quests phong phú",
+                                         "Đồ họa tuyệt đẹp"
+                                     ],
+                        "developer":  "Square Enix",
+                        "releaseDate":  "2023",
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "8.9/10",
+                        "fullDescription":  "Final Fantasy XVI - Huyền thoại tiếp nối."
+                    },
+        "price":  69.99,
+        "category":  "Adventure",
+        "title":  "Final Fantasy XVI",
+        "image":  "https://steamcdn-a.akamaihd.net/steam/apps/2130380/capsule_616x353.jpg"
     },
     {
-        "id": 21,
-        "description": "Game puzzle phát triển sáng tạo.",
-        "details": {
-            "features": [
-                "Câu đố độc đáo",
-                "Đồ họa minimalist",
-                "Âm nhạc tuyệt vời",
-                "Gameplay sâu sắc"
-            ],
-            "developer": "Thekla Inc",
-            "releaseDate": "2022",
-            "platform": "PC, PlayStation, Xbox",
-            "rating": "8.7/10",
-            "fullDescription": "Witness - Giải câu đố trong thiên đường."
-        },
-        "price": 39.99,
-        "category": "Puzzle",
-        "title": "The Witness",
-        "image": "https://images.rawgcdn.com/games/95659/b2k5m8p1r7q4t9x3y6w4.jpg"
+        "id":  21,
+        "description":  "Game puzzle phát triển sáng tạo.",
+        "details":  {
+                        "features":  [
+                                         "Câu đố độc đáo",
+                                         "Đồ họa minimalist",
+                                         "Âm nhạc tuyệt vời",
+                                         "Gameplay sâu sắc"
+                                     ],
+                        "developer":  "Thekla Inc",
+                        "releaseDate":  "2022",
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "8.7/10",
+                        "fullDescription":  "Witness - Giải câu đố trong thiên đường."
+                    },
+        "price":  39.99,
+        "category":  "Puzzle",
+        "title":  "The Witness",
+        "image":  "https://steamcdn-a.akamaihd.net/steam/apps/210970/capsule_616x353.jpg"
     },
     {
-        "id": 22,
-        "description": "Game casual kết nối cộng đồng.",
-        "details": {
-            "features": [
-                "Nội dung hạnh phúc",
-                "Gameplay nhẹ nhàng",
-                "Tùy chỉnh tự do",
-                "Cộng đồng tuyệt vời"
-            ],
-            "developer": "Nintendo EPD",
-            "releaseDate": "2020",
-            "platform": "PC, PlayStation, Xbox",
-            "rating": "8.4/10",
-            "fullDescription": "Stardew Valley - Sống cuộc sống nông thôn."
-        },
-        "price": 14.99,
-        "category": "Casual",
-        "title": "Stardew Valley",
-        "image": "https://images.rawgcdn.com/games/328111/d7t4k2p8r1q6x9y5w3z2.jpg"
+        "id":  22,
+        "description":  "Game casual kết nối cộng đồng.",
+        "details":  {
+                        "features":  [
+                                         "Nội dung hạnh phúc",
+                                         "Gameplay nhẹ nhàng",
+                                         "Tùy chỉnh tự do",
+                                         "Cộng đồng tuyệt vời"
+                                     ],
+                        "developer":  "Nintendo EPD",
+                        "releaseDate":  "2020",
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "8.4/10",
+                        "fullDescription":  "Stardew Valley - Sống cuộc sống nông thôn."
+                    },
+        "price":  14.99,
+        "category":  "Casual",
+        "title":  "Stardew Valley",
+        "image":  "https://steamcdn-a.akamaihd.net/steam/apps/413150/capsule_616x353.jpg"
     },
     {
-        "id": 23,
-        "description": "Game MMO fantasy huyền thoại.",
-        "details": {
-            "features": [
-                "Quests vô tận",
-                "PvP cạnh tranh",
-                "Dungeons khó",
-                "Community lớn"
-            ],
-            "developer": "Square Enix",
-            "releaseDate": "2010",
-            "platform": "PC, PlayStation, Xbox",
-            "rating": "8.5/10",
-            "fullDescription": "Final Fantasy XIV - MMO tuyệt vời."
-        },
-        "price": 49.99,
-        "category": "MMO",
-        "title": "Final Fantasy XIV",
-        "image": "https://images.rawgcdn.com/games/3869/m1k4p7r2q8t5x9y3w6z1.jpg"
+        "id":  23,
+        "description":  "Game MMO fantasy huyền thoại.",
+        "details":  {
+                        "features":  [
+                                         "Quests vô tận",
+                                         "PvP cạnh tranh",
+                                         "Dungeons khó",
+                                         "Community lớn"
+                                     ],
+                        "developer":  "Square Enix",
+                        "releaseDate":  "2010",
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "8.5/10",
+                        "fullDescription":  "Final Fantasy XIV - MMO tuyệt vời."
+                    },
+        "price":  49.99,
+        "category":  "MMO",
+        "title":  "Final Fantasy XIV",
+        "image":  "https://steamcdn-a.akamaihd.net/steam/apps/39120/capsule_616x353.jpg"
     },
     {
-        "id": 24,
-        "description": "Game đánh nhau huyền thoại.",
-        "details": {
-            "features": [
-                "Nhân vật iconic",
-                "Combo sâu sắc",
-                "Esports lớn",
-                "Gameplay sắc nét"
-            ],
-            "developer": "Bandai Namco",
-            "releaseDate": "2023",
-            "platform": "PC, PlayStation, Xbox",
-            "rating": "8.8/10",
-            "fullDescription": "Tekken 8 - Huyền thoại chiếm đấu."
-        },
-        "price": 49.99,
-        "category": "Fighting",
-        "title": "Tekken 8",
-        "image": "https://images.rawgcdn.com/games/595847/n8p3k5r1m7q2t9x4y6w8.jpg"
+        "id":  24,
+        "description":  "Game đánh nhau huyền thoại.",
+        "details":  {
+                        "features":  [
+                                         "Nhân vật iconic",
+                                         "Combo sâu sắc",
+                                         "Esports lớn",
+                                         "Gameplay sắc nét"
+                                     ],
+                        "developer":  "Bandai Namco",
+                        "releaseDate":  "2023",
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "8.8/10",
+                        "fullDescription":  "Tekken 8 - Huyền thoại chiếm đấu."
+                    },
+        "price":  49.99,
+        "category":  "Fighting",
+        "title":  "Tekken 8",
+        "image":  "https://steamcdn-a.akamaihd.net/steam/apps/2887720/capsule_616x353.jpg"
     },
     {
-        "id": 25,
-        "description": "Game hành động RPG thế giới mở.",
-        "details": {
-            "features": [
-                "Thế giới mở khổng lồ",
-                "Combat đa năng",
-                "Câu chuyện vĩ đại",
-                "Exploration phong phú"
-            ],
-            "developer": "FromSoftware",
-            "releaseDate": "2022",
-            "platform": "PC, PlayStation, Xbox",
-            "rating": "9.4/10",
-            "fullDescription": "Elden Ring - Masterpiece từ Fromsoft."
-        },
-        "price": 49.99,
-        "category": "Action RPG",
-        "title": "Dark Souls III",
-        "image": "https://images.rawgcdn.com/games/2322/p1k9m4r7t2q8x5y3w6z4.jpg"
+        "id":  25,
+        "description":  "Game hành động RPG thế giới mở.",
+        "details":  {
+                        "features":  [
+                                         "Thế giới mở khổng lồ",
+                                         "Combat đa năng",
+                                         "Câu chuyện vĩ đại",
+                                         "Exploration phong phú"
+                                     ],
+                        "developer":  "FromSoftware",
+                        "releaseDate":  "2022",
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "9.4/10",
+                        "fullDescription":  "Elden Ring - Masterpiece từ Fromsoft."
+                    },
+        "price":  49.99,
+        "category":  "Action RPG",
+        "title":  "Dark Souls III",
+        "image":  "https://steamcdn-a.akamaihd.net/steam/apps/374320/capsule_616x353.jpg"
     },
     {
-        "id": 26,
-        "description": "Game Sci-Fi RPG phức tạp.",
-        "details": {
-            "features": [
-                "Nước ngoài lạ kỳ",
-                "Alien đa dạng",
-                "Combat chiến lược",
-                "Lập kế hoạch phức tạp"
-            ],
-            "developer": "Firaxis Games",
-            "releaseDate": "2016",
-            "platform": "PC, PlayStation, Xbox",
-            "rating": "8.3/10",
-            "fullDescription": "XCOM 2 - Phòng chống xâm lăng ngoài hành tinh."
-        },
-        "price": 29.99,
-        "category": "Sci-Fi RPG",
-        "title": "XCOM 2",
-        "image": "https://images.rawgcdn.com/games/24859/k2m6p1r9t3q7x5y2w8z3.jpg"
+        "id":  26,
+        "description":  "Game Sci-Fi RPG phức tạp.",
+        "details":  {
+                        "features":  [
+                                         "Nước ngoài lạ kỳ",
+                                         "Alien đa dạng",
+                                         "Combat chiến lược",
+                                         "Lập kế hoạch phức tạp"
+                                     ],
+                        "developer":  "Firaxis Games",
+                        "releaseDate":  "2016",
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "8.3/10",
+                        "fullDescription":  "XCOM 2 - Phòng chống xâm lăng ngoài hành tinh."
+                    },
+        "price":  29.99,
+        "category":  "Sci-Fi RPG",
+        "title":  "XCOM 2",
+        "image":  "https://steamcdn-a.akamaihd.net/steam/apps/268500/capsule_616x353.jpg"
     },
     {
-        "id": 27,
-        "description": "Game chiến lược thế giới mở.",
-        "details": {
-            "features": [
-                "Lập kế hoạch sâu",
-                "Nhân vật dị biệt",
-                "Cốt truyện phức tạp",
-                "Replay value cao"
-            ],
-            "developer": "Firaxis Games",
-            "releaseDate": "2019",
-            "platform": "PC, PlayStation, Xbox",
-            "rating": "8.4/10",
-            "fullDescription": "Civilization VI - Xây dựng đế chế."
-        },
-        "price": 49.99,
-        "category": "Strategy",
-        "title": "Civilization VI",
-        "image": "https://images.rawgcdn.com/games/24003/t7m2k5p9r1q8x4y6w3z5.jpg"
+        "id":  27,
+        "description":  "Game chiến lược thế giới mở.",
+        "details":  {
+                        "features":  [
+                                         "Lập kế hoạch sâu",
+                                         "Nhân vật dị biệt",
+                                         "Cốt truyện phức tạp",
+                                         "Replay value cao"
+                                     ],
+                        "developer":  "Firaxis Games",
+                        "releaseDate":  "2019",
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "8.4/10",
+                        "fullDescription":  "Civilization VI - Xây dựng đế chế."
+                    },
+        "price":  49.99,
+        "category":  "Strategy",
+        "title":  "Civilization VI",
+        "image":  "https://steamcdn-a.akamaihd.net/steam/apps/8930/capsule_616x353.jpg"
     },
     {
-        "id": 28,
-        "description": "Game bắn súng battle royale.",
-        "details": {
-            "features": [
-                "100 người chơi",
-                "Map khổng lồ",
-                "Loot phong phú",
-                "Gameplay tốc độ"
-            ],
-            "developer": "PUBG Corporation",
-            "releaseDate": "2017",
-            "platform": "PC, PlayStation, Xbox",
-            "rating": "8.2/10",
-            "fullDescription": "PUBG - Pioneers of Battle Royale."
-        },
-        "price": 29.99,
-        "category": "Shooter",
-        "title": "PLAYERUNKNOWN'S BATTLEGROUNDS",
-        "image": "https://images.rawgcdn.com/games/16907/q3t8m1p5r2k9x7y4w6z1.jpg"
+        "id":  28,
+        "description":  "Game bắn súng battle royale.",
+        "details":  {
+                        "features":  [
+                                         "100 người chơi",
+                                         "Map khổng lồ",
+                                         "Loot phong phú",
+                                         "Gameplay tốc độ"
+                                     ],
+                        "developer":  "PUBG Corporation",
+                        "releaseDate":  "2017",
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "8.2/10",
+                        "fullDescription":  "PUBG - Pioneers of Battle Royale."
+                    },
+        "price":  29.99,
+        "category":  "Shooter",
+        "title":  "PLAYERUNKNOWN\u0027S BATTLEGROUNDS",
+        "image":  "https://steamcdn-a.akamaihd.net/steam/apps/578080/capsule_616x353.jpg"
     },
     {
-        "id": 29,
-        "description": "Game đua xe tốc độ cao.",
-        "details": {
-            "features": [
-                "Tốc độ cực nhanh",
-                "Gamer arcade",
-                "Graphics tuyệt đẹp",
-                "Multiplayer online"
-            ],
-            "developer": "Ghost Games",
-            "releaseDate": "2015",
-            "platform": "PC, PlayStation, Xbox",
-            "rating": "7.9/10",
-            "fullDescription": "Need for Speed - Tốc độ hoặc chết."
-        },
-        "price": 39.99,
-        "category": "Racing",
-        "title": "Need for Speed",
-        "image": "https://images.rawgcdn.com/games/9506/r5k1m8p2t7q4x9y3w6z5.jpg"
+        "id":  29,
+        "description":  "Game đua xe tốc độ cao.",
+        "details":  {
+                        "features":  [
+                                         "Tốc độ cực nhanh",
+                                         "Gamer arcade",
+                                         "Graphics tuyệt đẹp",
+                                         "Multiplayer online"
+                                     ],
+                        "developer":  "Ghost Games",
+                        "releaseDate":  "2015",
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "7.9/10",
+                        "fullDescription":  "Need for Speed - Tốc độ hoặc chết."
+                    },
+        "price":  39.99,
+        "category":  "Racing",
+        "title":  "Need for Speed",
+        "image":  "https://steamcdn-a.akamaihd.net/steam/apps/585410/capsule_616x353.jpg"
     },
     {
-        "id": 30,
-        "description": "Game thể thao mô phỏng bóng bầu dục.",
-        "details": {
-            "features": [
-                "Teams NFL thực",
-                "Chế độ quản lý",
-                "Mutant squad",
-                "Online multiplayer"
-            ],
-            "developer": "EA Sports",
-            "releaseDate": "2023",
-            "platform": "PC, PlayStation, Xbox",
-            "rating": "7.6/10",
-            "fullDescription": "Madden NFL 24 - Bóng bầu dục tiêu chuẩn."
-        },
-        "price": 69.99,
-        "category": "Sports",
-        "title": "Madden NFL 24",
-        "image": "https://images.rawgcdn.com/games/513820/x2m5k8p1r9t4q7y3w6z2.jpg"
+        "id":  30,
+        "description":  "Game thể thao mô phỏng bóng bầu dục.",
+        "details":  {
+                        "features":  [
+                                         "Teams NFL thực",
+                                         "Chế độ quản lý",
+                                         "Mutant squad",
+                                         "Online multiplayer"
+                                     ],
+                        "developer":  "EA Sports",
+                        "releaseDate":  "2023",
+                        "platform":  "PC, PlayStation, Xbox",
+                        "rating":  "7.6/10",
+                        "fullDescription":  "Madden NFL 24 - Bóng bầu dục tiêu chuẩn."
+                    },
+        "price":  69.99,
+        "category":  "Sports",
+        "title":  "Madden NFL 24",
+        "image":  "https://s25.q4cdn.com/103200307/files/doc_multimedia/MAD24_Deluxe_16x9.jpg"
     }
 ]

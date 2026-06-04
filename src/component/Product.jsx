@@ -1,6 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 function Product({ game, addToCart, onCardClick, onBuyNow }) {
+  const [imageError, setImageError] = useState(false);
+
+  const handleImageError = () => {
+    setImageError(true);
+  };
+
+  const imageUrl = imageError ? '/placeholder-game.svg' : game.image;
+
   return (
     <div className="col-md-4 mb-4">
       <div 
@@ -17,10 +25,11 @@ function Product({ game, addToCart, onCardClick, onBuyNow }) {
         }}
       >
         <img 
-          src={game.image} 
+          src={imageUrl}
+          onError={handleImageError}
           className="card-img-top" 
           alt={game.title} 
-          style={{ height: '200px', objectFit: 'cover', cursor: 'pointer' }}
+          style={{ height: '200px', objectFit: 'cover', cursor: 'pointer', backgroundColor: '#2a2a2a' }}
         />
         <div className="card-body d-flex flex-column">
           <span className="badge bg-secondary mb-2 text-start align-self-start">{game.category}</span>
