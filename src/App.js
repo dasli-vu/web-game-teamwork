@@ -157,6 +157,16 @@ function App() {
         </>
       )}
 
+      {currentPage === 'cart' && (
+        <Cart 
+          cartItems={cart} 
+          removeFromCart={removeFromCart} 
+          clearCart={clearCart}
+          onCheckout={() => setShowCheckout(true)}
+          onNavigateHome={() => setCurrentPage('home')}
+        />
+      )}
+
       {currentPage === 'orders' && isLoggedIn && <OrderHistory />}
 
       {currentPage === 'admin' && isAdminLoggedIn && (

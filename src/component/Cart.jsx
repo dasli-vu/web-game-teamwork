@@ -1,24 +1,43 @@
 import React from 'react';
 
-function Cart({ cartItems, removeFromCart, clearCart, onCheckout }) {
+function Cart({ cartItems, removeFromCart, clearCart, onCheckout, onNavigateHome }) {
   const totalPayment = cartItems.reduce((total, item) => total + item.price, 0);
 
   return (
     <div className="container-fluid my-5">
-      <h3 className="mb-4 fw-bold text-dark ps-3">🛒 Giỏ Hàng Của Bạn</h3>
+      <div className="d-flex justify-content-between align-items-center mb-4">
+        <h3 className="mb-0 fw-bold text-dark ps-3">🛒 Giỏ Hàng Của Bạn</h3>
+        {onNavigateHome && (
+          <button 
+            className="btn btn-outline-secondary me-3"
+            onClick={onNavigateHome}
+          >
+            ← Quay lại cửa hàng
+          </button>
+        )}
+      </div>
       
       <div className="row g-4">
         {/* Cột hiển thị danh sách sản phẩm trong giỏ (Bên trái) */}
         <div className="col-lg-8">
-          {cartItems.length === 0 ? (
+            {cartItems.length === 0 ? (
             <div className="card shadow-lg p-5 text-center border-0 empty-cart">
               <div className="fs-1 mb-3">📭</div>
               <p className="text-muted fs-5 mb-4">Giỏ hàng của bạn đang trống rỗng.</p>
-              <a href="#home" className="btn btn-warning fw-bold px-4 py-2">
-                🛍️ Quay lại cửa hàng
-              </a>
+              {onNavigateHome ? (
+                <button 
+                  className="btn btn-warning fw-bold px-4 py-2"
+                  onClick={onNavigateHome}
+                >
+                  🛍️ Quay lại cửa hàng
+                </button>
+              ) : (
+                <a href="#home" className="btn btn-warning fw-bold px-4 py-2">
+                  🛍️ Quay lại cửa hàng
+                </a>
+              )}
             </div>
-          ) : (
+          ) :(
             <div className="cart-items-container">
               <div className="card shadow-lg border-0 overflow-hidden">
                 {cartItems.map((item, index) => (
